@@ -25146,6 +25146,16 @@ extern "C" IL2CPP_METHOD_ATTR double Math_Round_m101670467 (RuntimeObject * __th
 {
 	return bankers_round(___a0);
 }
+// System.Double System.Math::Sin(System.Double)
+extern "C" IL2CPP_METHOD_ATTR double Math_Sin_m2190801110 (RuntimeObject * __this /* static, unused */, double ___a0, const RuntimeMethod* method)
+{
+	return sin(___a0);
+}
+// System.Double System.Math::Acos(System.Double)
+extern "C" IL2CPP_METHOD_ATTR double Math_Acos_m2076003797 (RuntimeObject * __this /* static, unused */, double ___d0, const RuntimeMethod* method)
+{
+	return acos(___d0);
+}
 // System.Double System.Math::Pow(System.Double,System.Double)
 extern "C" IL2CPP_METHOD_ATTR double Math_Pow_m754227594 (RuntimeObject * __this /* static, unused */, double ___x0, double ___y1, const RuntimeMethod* method)
 {

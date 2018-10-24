@@ -32,7 +32,7 @@ public class Aim : MonoBehaviour {
             {
                 flag = 1;
                 score++;
-                Material mat = new Material(Shader.Find("Custom/BoxOnAim"));
+                Material mat = new Material(Shader.Find("Shader Forge/BoxOnAim"));
                 other.GetComponent<MeshRenderer>().material = mat;
 
                 //延时0.1秒判断是否胜利
@@ -53,7 +53,7 @@ public class Aim : MonoBehaviour {
             {
                 flag = 0;
                 score--;
-                Material mat = new Material(Shader.Find("Custom/Box"));
+                Material mat = new Material(Shader.Find("Shader Forge/Box"));
                 other.GetComponent<MeshRenderer>().material = mat;
             }
         }

@@ -54,7 +54,7 @@ public class MainCamera : MonoBehaviour{
     public void Update(){
         //NOTE: mouse coordinates have a bottom-left origin, camera top-left
         inputBounds.x = GetComponent<Camera>().pixelWidth * paramInputBounds.x;
-        inputBounds.y = GetComponent<Camera>().pixelHeight * paramInputBounds.y+90;
+        inputBounds.y = GetComponent<Camera>().pixelHeight * paramInputBounds.y;
         inputBounds.width = GetComponent<Camera>().pixelWidth * paramInputBounds.width;
         inputBounds.height = GetComponent<Camera>().pixelHeight * paramInputBounds.height;
 

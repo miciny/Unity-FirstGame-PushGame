@@ -230,9 +230,17 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Camera_get_pixelRect_Injected();
 		Register_UnityEngine_Camera_get_pixelRect_Injected();
 
+		//System.Void UnityEngine.Camera::set_depthTextureMode(UnityEngine.DepthTextureMode)
+		void Register_UnityEngine_Camera_set_depthTextureMode();
+		Register_UnityEngine_Camera_set_depthTextureMode();
+
 		//UnityEngine.CameraClearFlags UnityEngine.Camera::get_clearFlags()
 		void Register_UnityEngine_Camera_get_clearFlags();
 		Register_UnityEngine_Camera_get_clearFlags();
+
+		//UnityEngine.DepthTextureMode UnityEngine.Camera::get_depthTextureMode()
+		void Register_UnityEngine_Camera_get_depthTextureMode();
+		Register_UnityEngine_Camera_get_depthTextureMode();
 
 		//UnityEngine.GameObject UnityEngine.Camera::RaycastTry2D_Injected(UnityEngine.Ray&,System.Single,System.Int32)
 		void Register_UnityEngine_Camera_RaycastTry2D_Injected();
@@ -610,11 +618,39 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.Mesh
 
+		//System.Array UnityEngine.Mesh::GetAllocArrayFromChannelImpl(UnityEngine.Mesh/InternalShaderChannel,UnityEngine.Mesh/InternalVertexChannelType,System.Int32)
+		void Register_UnityEngine_Mesh_GetAllocArrayFromChannelImpl();
+		Register_UnityEngine_Mesh_GetAllocArrayFromChannelImpl();
+
+		//System.Boolean UnityEngine.Mesh::HasChannel(UnityEngine.Mesh/InternalShaderChannel)
+		void Register_UnityEngine_Mesh_HasChannel();
+		Register_UnityEngine_Mesh_HasChannel();
+
+		//System.Boolean UnityEngine.Mesh::get_canAccess()
+		void Register_UnityEngine_Mesh_get_canAccess();
+		Register_UnityEngine_Mesh_get_canAccess();
+
 		//System.Void UnityEngine.Mesh::Internal_Create(UnityEngine.Mesh)
 		void Register_UnityEngine_Mesh_Internal_Create();
 		Register_UnityEngine_Mesh_Internal_Create();
 
+		//System.Void UnityEngine.Mesh::PrintErrorCantAccessChannel(UnityEngine.Mesh/InternalShaderChannel)
+		void Register_UnityEngine_Mesh_PrintErrorCantAccessChannel();
+		Register_UnityEngine_Mesh_PrintErrorCantAccessChannel();
+
+		//System.Void UnityEngine.Mesh::SetArrayForChannelImpl(UnityEngine.Mesh/InternalShaderChannel,UnityEngine.Mesh/InternalVertexChannelType,System.Int32,System.Array,System.Int32)
+		void Register_UnityEngine_Mesh_SetArrayForChannelImpl();
+		Register_UnityEngine_Mesh_SetArrayForChannelImpl();
+
 	//End Registrations for type : UnityEngine.Mesh
+
+	//Start Registrations for type : UnityEngine.MeshFilter
+
+		//UnityEngine.Mesh UnityEngine.MeshFilter::get_sharedMesh()
+		void Register_UnityEngine_MeshFilter_get_sharedMesh();
+		Register_UnityEngine_MeshFilter_get_sharedMesh();
+
+	//End Registrations for type : UnityEngine.MeshFilter
 
 	//Start Registrations for type : UnityEngine.MonoBehaviour
 

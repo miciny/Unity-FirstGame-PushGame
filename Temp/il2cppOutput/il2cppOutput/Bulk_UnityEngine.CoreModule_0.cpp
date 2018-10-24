@@ -538,6 +538,8 @@ struct Camera_t4157153871;
 struct CameraCallback_t190067161;
 // UnityEngine.Camera[]
 struct CameraU5BU5D_t1709987734;
+// UnityEngine.Color[]
+struct ColorU5BU5D_t941916413;
 // UnityEngine.Component
 struct Component_t1923634451;
 // UnityEngine.Coroutine
@@ -768,6 +770,8 @@ struct UnityLogWriter_t1374348020;
 struct UnitySynchronizationContext_t1887453786;
 // UnityEngine.UnitySynchronizationContext/WorkRequest[]
 struct WorkRequestU5BU5D_t3723878365;
+// UnityEngine.Vector3[]
+struct Vector3U5BU5D_t1718750761;
 // UnityEngine.WaitForSeconds
 struct WaitForSeconds_t1699091251;
 // UnityEngine.YieldInstruction
@@ -996,6 +1000,7 @@ extern String_t* _stringLiteral4187617987;
 extern String_t* _stringLiteral441250670;
 extern String_t* _stringLiteral443216750;
 extern String_t* _stringLiteral461147025;
+extern String_t* _stringLiteral470911652;
 extern String_t* _stringLiteral547166083;
 extern String_t* _stringLiteral572138181;
 extern String_t* _stringLiteral61343007;
@@ -1004,6 +1009,7 @@ extern String_t* _stringLiteral6580196;
 extern String_t* _stringLiteral681811338;
 extern String_t* _stringLiteral686573026;
 extern String_t* _stringLiteral696106652;
+extern String_t* _stringLiteral722687134;
 extern String_t* _stringLiteral736029419;
 extern String_t* _stringLiteral757602046;
 extern String_t* _stringLiteral800089163;
@@ -1061,6 +1067,9 @@ extern const RuntimeMethod* ManagedStreamHelpers_ManagedStreamLength_m2930872960
 extern const RuntimeMethod* ManagedStreamHelpers_ManagedStreamRead_m481666286_RuntimeMethod_var;
 extern const RuntimeMethod* ManagedStreamHelpers_ManagedStreamSeek_m3158782053_RuntimeMethod_var;
 extern const RuntimeMethod* ManagedStreamHelpers_ValidateLoadFromStream_m580138133_RuntimeMethod_var;
+extern const RuntimeMethod* Mesh_DefaultDimensionForChannel_m576040980_RuntimeMethod_var;
+extern const RuntimeMethod* Mesh_GetAllocArrayFromChannel_TisVector3_t3722313464_m4289135201_RuntimeMethod_var;
+extern const RuntimeMethod* Mesh_SetArrayForChannel_TisColor_t2555686324_m1863272770_RuntimeMethod_var;
 extern const RuntimeMethod* MonoBehaviour_InvokeRepeating_m650519629_RuntimeMethod_var;
 extern const RuntimeMethod* MonoBehaviour_StartCoroutine_m1654577315_RuntimeMethod_var;
 extern const RuntimeMethod* MonoBehaviour_StartCoroutine_m3411253000_RuntimeMethod_var;
@@ -1166,6 +1175,7 @@ extern const uint32_t Debug_LogError_m2850623458_MetadataUsageId;
 extern const uint32_t Debug_LogException_m2207318968_MetadataUsageId;
 extern const uint32_t Debug_LogFormat_m309087137_MetadataUsageId;
 extern const uint32_t Debug_LogWarningFormat_m2535776735_MetadataUsageId;
+extern const uint32_t Debug_Log_m2288605041_MetadataUsageId;
 extern const uint32_t Debug_Log_m4051431634_MetadataUsageId;
 extern const uint32_t Debug__cctor_m1523394265_MetadataUsageId;
 extern const uint32_t Debug_get_unityLogger_m2239795986_MetadataUsageId;
@@ -1213,7 +1223,11 @@ extern const uint32_t Mathf_Approximately_m245805902_MetadataUsageId;
 extern const uint32_t Mathf_Lerp_m1004423579_MetadataUsageId;
 extern const uint32_t Mathf_Repeat_m1502810009_MetadataUsageId;
 extern const uint32_t Mathf__cctor_m1175545152_MetadataUsageId;
+extern const uint32_t Mesh_DefaultDimensionForChannel_m576040980_MetadataUsageId;
 extern const uint32_t Mesh__ctor_m2533762929_MetadataUsageId;
+extern const uint32_t Mesh_get_normals_m4099615978_MetadataUsageId;
+extern const uint32_t Mesh_get_vertices_m3585684815_MetadataUsageId;
+extern const uint32_t Mesh_set_colors_m2218481242_MetadataUsageId;
 extern const uint32_t MessageEvent__ctor_m1231650089_MetadataUsageId;
 extern const uint32_t MessageTypeSubscribers__ctor_m1543468991_MetadataUsageId;
 extern const uint32_t MonoBehaviour_InvokeRepeating_m650519629_MetadataUsageId;
@@ -1383,6 +1397,7 @@ extern const uint32_t Vector3_Lerp_m407887542_MetadataUsageId;
 extern const uint32_t Vector3_Magnitude_m3447562852_MetadataUsageId;
 extern const uint32_t Vector3_MoveTowards_m2786395547_MetadataUsageId;
 extern const uint32_t Vector3_Normalize_m2941713846_MetadataUsageId;
+extern const uint32_t Vector3_Normalize_m914904454_MetadataUsageId;
 extern const uint32_t Vector3_ToString_m759076600_MetadataUsageId;
 extern const uint32_t Vector3__cctor_m2599650684_MetadataUsageId;
 extern const uint32_t Vector3_get_back_m4077847766_MetadataUsageId;
@@ -1420,6 +1435,7 @@ struct ParameterModifierU5BU5D_t2943407543;
 struct StringU5BU5D_t1281789340;
 struct TypeU5BU5D_t3940880105;
 struct CameraU5BU5D_t1709987734;
+struct ColorU5BU5D_t941916413;
 struct DisallowMultipleComponentU5BU5D_t3936143868;
 struct DisplayU5BU5D_t103034768;
 struct ExecuteInEditModeU5BU5D_t3239458680;
@@ -1428,6 +1444,7 @@ struct KeyframeU5BU5D_t1068524471;
 struct PlayableBindingU5BU5D_t829358056;
 struct RequireComponentU5BU5D_t2245623724;
 struct HitInfoU5BU5D_t1685002053;
+struct Vector3U5BU5D_t1718750761;
 
 
 #ifndef U3CMODULEU3E_T692745530_H
@@ -4082,6 +4099,26 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // MESSAGETYPESUBSCRIBERS_T1684935770_H
+#ifndef NOALLOCHELPERS_T1437076930_H
+#define NOALLOCHELPERS_T1437076930_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UnityEngine.NoAllocHelpers
+struct  NoAllocHelpers_t1437076930  : public RuntimeObject
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // NOALLOCHELPERS_T1437076930_H
 #ifndef PLAYABLEBEHAVIOUR_T4203540982_H
 #define PLAYABLEBEHAVIOUR_T4203540982_H
 #ifdef __clang__
@@ -12010,6 +12047,35 @@ struct CullingGroup_t2096318768_marshaled_com
 	Il2CppMethodPointer ___m_OnStateChanged_1;
 };
 #endif // CULLINGGROUP_T2096318768_H
+#ifndef DEPTHTEXTUREMODE_T4161834719_H
+#define DEPTHTEXTUREMODE_T4161834719_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UnityEngine.DepthTextureMode
+struct  DepthTextureMode_t4161834719 
+{
+public:
+	// System.Int32 UnityEngine.DepthTextureMode::value__
+	int32_t ___value___1;
+
+public:
+	inline static int32_t get_offset_of_value___1() { return static_cast<int32_t>(offsetof(DepthTextureMode_t4161834719, ___value___1)); }
+	inline int32_t get_value___1() const { return ___value___1; }
+	inline int32_t* get_address_of_value___1() { return &___value___1; }
+	inline void set_value___1(int32_t value)
+	{
+		___value___1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // DEPTHTEXTUREMODE_T4161834719_H
 #ifndef DISPLAY_T1387065949_H
 #define DISPLAY_T1387065949_H
 #ifdef __clang__
@@ -12878,6 +12944,64 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // LOGTYPE_T73765434_H
+#ifndef INTERNALSHADERCHANNEL_T300897861_H
+#define INTERNALSHADERCHANNEL_T300897861_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UnityEngine.Mesh/InternalShaderChannel
+struct  InternalShaderChannel_t300897861 
+{
+public:
+	// System.Int32 UnityEngine.Mesh/InternalShaderChannel::value__
+	int32_t ___value___1;
+
+public:
+	inline static int32_t get_offset_of_value___1() { return static_cast<int32_t>(offsetof(InternalShaderChannel_t300897861, ___value___1)); }
+	inline int32_t get_value___1() const { return ___value___1; }
+	inline int32_t* get_address_of_value___1() { return &___value___1; }
+	inline void set_value___1(int32_t value)
+	{
+		___value___1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // INTERNALSHADERCHANNEL_T300897861_H
+#ifndef INTERNALVERTEXCHANNELTYPE_T299736786_H
+#define INTERNALVERTEXCHANNELTYPE_T299736786_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UnityEngine.Mesh/InternalVertexChannelType
+struct  InternalVertexChannelType_t299736786 
+{
+public:
+	// System.Int32 UnityEngine.Mesh/InternalVertexChannelType::value__
+	int32_t ___value___1;
+
+public:
+	inline static int32_t get_offset_of_value___1() { return static_cast<int32_t>(offsetof(InternalVertexChannelType_t299736786, ___value___1)); }
+	inline int32_t get_value___1() const { return ___value___1; }
+	inline int32_t* get_address_of_value___1() { return &___value___1; }
+	inline void set_value___1(int32_t value)
+	{
+		___value___1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // INTERNALVERTEXCHANNELTYPE_T299736786_H
 #ifndef MIXEDLIGHTINGMODE_T270503864_H
 #define MIXEDLIGHTINGMODE_T270503864_H
 #ifdef __clang__
@@ -18075,6 +18199,76 @@ public:
 		m_Items[index] = value;
 	}
 };
+// UnityEngine.Vector3[]
+struct Vector3U5BU5D_t1718750761  : public RuntimeArray
+{
+public:
+	ALIGN_FIELD (8) Vector3_t3722313464  m_Items[1];
+
+public:
+	inline Vector3_t3722313464  GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Vector3_t3722313464 * GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Vector3_t3722313464  value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline Vector3_t3722313464  GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Vector3_t3722313464 * GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Vector3_t3722313464  value)
+	{
+		m_Items[index] = value;
+	}
+};
+// UnityEngine.Color[]
+struct ColorU5BU5D_t941916413  : public RuntimeArray
+{
+public:
+	ALIGN_FIELD (8) Color_t2555686324  m_Items[1];
+
+public:
+	inline Color_t2555686324  GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Color_t2555686324 * GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Color_t2555686324  value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline Color_t2555686324  GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Color_t2555686324 * GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Color_t2555686324  value)
+	{
+		m_Items[index] = value;
+	}
+};
 // UnityEngine.Playables.PlayableBinding[]
 struct PlayableBindingU5BU5D_t829358056  : public RuntimeArray
 {
@@ -18320,6 +18514,10 @@ extern "C" IL2CPP_METHOD_ATTR RuntimeObject * Enumerator_get_Current_m470245444_
 extern "C" IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m2142368520_gshared (Enumerator_t2146457487 * __this, const RuntimeMethod* method);
 // System.Void System.Collections.Generic.List`1/Enumerator<System.Object>::Dispose()
 extern "C" IL2CPP_METHOD_ATTR void Enumerator_Dispose_m3007748546_gshared (Enumerator_t2146457487 * __this, const RuntimeMethod* method);
+// T[] UnityEngine.Mesh::GetAllocArrayFromChannel<UnityEngine.Vector3>(UnityEngine.Mesh/InternalShaderChannel)
+extern "C" IL2CPP_METHOD_ATTR Vector3U5BU5D_t1718750761* Mesh_GetAllocArrayFromChannel_TisVector3_t3722313464_m4289135201_gshared (Mesh_t3648964284 * __this, int32_t ___channel0, const RuntimeMethod* method);
+// System.Void UnityEngine.Mesh::SetArrayForChannel<UnityEngine.Color>(UnityEngine.Mesh/InternalShaderChannel,T[])
+extern "C" IL2CPP_METHOD_ATTR void Mesh_SetArrayForChannel_TisColor_t2555686324_m1863272770_gshared (Mesh_t3648964284 * __this, int32_t ___channel0, ColorU5BU5D_t941916413* ___values1, const RuntimeMethod* method);
 // System.Void System.Collections.Generic.List`1<System.Int32>::.ctor()
 extern "C" IL2CPP_METHOD_ATTR void List_1__ctor_m1628857705_gshared (List_1_t128053199 * __this, const RuntimeMethod* method);
 // T UnityEngine.ScriptableObject::CreateInstance<System.Object>()
@@ -18903,6 +19101,22 @@ extern "C" IL2CPP_METHOD_ATTR float Mathf_Max_m3146388979 (RuntimeObject * __thi
 extern "C" IL2CPP_METHOD_ATTR float Mathf_Clamp_m3350697880 (RuntimeObject * __this /* static, unused */, float ___value0, float ___min1, float ___max2, const RuntimeMethod* method);
 // System.Void UnityEngine.Mesh::Internal_Create(UnityEngine.Mesh)
 extern "C" IL2CPP_METHOD_ATTR void Mesh_Internal_Create_m2853543051 (RuntimeObject * __this /* static, unused */, Mesh_t3648964284 * ___mono0, const RuntimeMethod* method);
+// System.Boolean UnityEngine.Mesh::get_canAccess()
+extern "C" IL2CPP_METHOD_ATTR bool Mesh_get_canAccess_m2239225054 (Mesh_t3648964284 * __this, const RuntimeMethod* method);
+// System.Void UnityEngine.Mesh::SetArrayForChannelImpl(UnityEngine.Mesh/InternalShaderChannel,UnityEngine.Mesh/InternalVertexChannelType,System.Int32,System.Array,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR void Mesh_SetArrayForChannelImpl_m2642100114 (Mesh_t3648964284 * __this, int32_t ___channel0, int32_t ___format1, int32_t ___dim2, RuntimeArray * ___values3, int32_t ___arraySize4, const RuntimeMethod* method);
+// System.Void UnityEngine.Mesh::PrintErrorCantAccessChannel(UnityEngine.Mesh/InternalShaderChannel)
+extern "C" IL2CPP_METHOD_ATTR void Mesh_PrintErrorCantAccessChannel_m2109128075 (Mesh_t3648964284 * __this, int32_t ___ch0, const RuntimeMethod* method);
+// T[] UnityEngine.Mesh::GetAllocArrayFromChannel<UnityEngine.Vector3>(UnityEngine.Mesh/InternalShaderChannel)
+inline Vector3U5BU5D_t1718750761* Mesh_GetAllocArrayFromChannel_TisVector3_t3722313464_m4289135201 (Mesh_t3648964284 * __this, int32_t ___channel0, const RuntimeMethod* method)
+{
+	return ((  Vector3U5BU5D_t1718750761* (*) (Mesh_t3648964284 *, int32_t, const RuntimeMethod*))Mesh_GetAllocArrayFromChannel_TisVector3_t3722313464_m4289135201_gshared)(__this, ___channel0, method);
+}
+// System.Void UnityEngine.Mesh::SetArrayForChannel<UnityEngine.Color>(UnityEngine.Mesh/InternalShaderChannel,T[])
+inline void Mesh_SetArrayForChannel_TisColor_t2555686324_m1863272770 (Mesh_t3648964284 * __this, int32_t ___channel0, ColorU5BU5D_t941916413* ___values1, const RuntimeMethod* method)
+{
+	((  void (*) (Mesh_t3648964284 *, int32_t, ColorU5BU5D_t941916413*, const RuntimeMethod*))Mesh_SetArrayForChannel_TisColor_t2555686324_m1863272770_gshared)(__this, ___channel0, ___values1, method);
+}
 // System.Boolean UnityEngine.MonoBehaviour::Internal_IsInvokingAll(UnityEngine.MonoBehaviour)
 extern "C" IL2CPP_METHOD_ATTR bool MonoBehaviour_Internal_IsInvokingAll_m2820042090 (RuntimeObject * __this /* static, unused */, MonoBehaviour_t3962482529 * ___self0, const RuntimeMethod* method);
 // System.Void UnityEngine.MonoBehaviour::Internal_CancelInvokeAll(UnityEngine.MonoBehaviour)
@@ -19124,6 +19338,8 @@ inline void UnityEvent_1__ctor_m1298757307 (UnityEvent_1_t2052235288 * __this, c
 }
 // System.String System.Guid::ToString()
 extern "C" IL2CPP_METHOD_ATTR String_t* Guid_ToString_m3279186591 (Guid_t * __this, const RuntimeMethod* method);
+// System.Int32 System.Array::get_Length()
+extern "C" IL2CPP_METHOD_ATTR int32_t Array_get_Length_m21610649 (RuntimeArray * __this, const RuntimeMethod* method);
 // System.Int32 System.Object::GetHashCode()
 extern "C" IL2CPP_METHOD_ATTR int32_t Object_GetHashCode_m2705121830 (RuntimeObject * __this, const RuntimeMethod* method);
 // System.Boolean UnityEngine.Object::CompareBaseObjects(UnityEngine.Object,UnityEngine.Object)
@@ -19679,6 +19895,8 @@ extern "C" IL2CPP_METHOD_ATTR bool Vector3_Equals_m906392898 (Vector3_t372231346
 extern "C" IL2CPP_METHOD_ATTR bool Vector3_Equals_m1753054704 (Vector3_t3722313464 * __this, RuntimeObject * ___other0, const RuntimeMethod* method);
 // System.Single UnityEngine.Vector3::Magnitude(UnityEngine.Vector3)
 extern "C" IL2CPP_METHOD_ATTR float Vector3_Magnitude_m3447562852 (RuntimeObject * __this /* static, unused */, Vector3_t3722313464  ___vector0, const RuntimeMethod* method);
+// System.Void UnityEngine.Vector3::Normalize()
+extern "C" IL2CPP_METHOD_ATTR void Vector3_Normalize_m914904454 (Vector3_t3722313464 * __this, const RuntimeMethod* method);
 // UnityEngine.Vector3 UnityEngine.Vector3::Normalize(UnityEngine.Vector3)
 extern "C" IL2CPP_METHOD_ATTR Vector3_t3722313464  Vector3_Normalize_m2941713846 (RuntimeObject * __this /* static, unused */, Vector3_t3722313464  ___value0, const RuntimeMethod* method);
 // System.Single UnityEngine.Vector3::SqrMagnitude(UnityEngine.Vector3)
@@ -21475,6 +21693,25 @@ extern "C" IL2CPP_METHOD_ATTR int32_t Camera_get_clearFlags_m992534691 (Camera_t
 	int32_t retVal = _il2cpp_icall_func(__this);
 	return retVal;
 }
+// UnityEngine.DepthTextureMode UnityEngine.Camera::get_depthTextureMode()
+extern "C" IL2CPP_METHOD_ATTR int32_t Camera_get_depthTextureMode_m871144641 (Camera_t4157153871 * __this, const RuntimeMethod* method)
+{
+	typedef int32_t (*Camera_get_depthTextureMode_m871144641_ftn) (Camera_t4157153871 *);
+	static Camera_get_depthTextureMode_m871144641_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Camera_get_depthTextureMode_m871144641_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Camera::get_depthTextureMode()");
+	int32_t retVal = _il2cpp_icall_func(__this);
+	return retVal;
+}
+// System.Void UnityEngine.Camera::set_depthTextureMode(UnityEngine.DepthTextureMode)
+extern "C" IL2CPP_METHOD_ATTR void Camera_set_depthTextureMode_m754977860 (Camera_t4157153871 * __this, int32_t ___value0, const RuntimeMethod* method)
+{
+	typedef void (*Camera_set_depthTextureMode_m754977860_ftn) (Camera_t4157153871 *, int32_t);
+	static Camera_set_depthTextureMode_m754977860_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Camera_set_depthTextureMode_m754977860_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Camera::set_depthTextureMode(UnityEngine.DepthTextureMode)");
+	_il2cpp_icall_func(__this, ___value0);
+}
 // UnityEngine.Rect UnityEngine.Camera::get_pixelRect()
 extern "C" IL2CPP_METHOD_ATTR Rect_t2360479859  Camera_get_pixelRect_m2283183456 (Camera_t4157153871 * __this, const RuntimeMethod* method)
 {
@@ -22893,6 +23130,25 @@ extern "C" IL2CPP_METHOD_ATTR void Debug_Log_m4051431634 (RuntimeObject * __this
 		return;
 	}
 }
+// System.Void UnityEngine.Debug::Log(System.Object,UnityEngine.Object)
+extern "C" IL2CPP_METHOD_ATTR void Debug_Log_m2288605041 (RuntimeObject * __this /* static, unused */, RuntimeObject * ___message0, Object_t631007953 * ___context1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Debug_Log_m2288605041_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t3317548046_il2cpp_TypeInfo_var);
+		RuntimeObject* L_0 = Debug_get_unityLogger_m2239795986(NULL /*static, unused*/, /*hidden argument*/NULL);
+		RuntimeObject * L_1 = ___message0;
+		Object_t631007953 * L_2 = ___context1;
+		NullCheck(L_0);
+		InterfaceActionInvoker3< int32_t, RuntimeObject *, Object_t631007953 * >::Invoke(1 /* System.Void UnityEngine.ILogger::Log(UnityEngine.LogType,System.Object,UnityEngine.Object) */, ILogger_t2607134790_il2cpp_TypeInfo_var, L_0, 3, L_1, L_2);
+		return;
+	}
+}
 // System.Void UnityEngine.Debug::LogFormat(System.String,System.Object[])
 extern "C" IL2CPP_METHOD_ATTR void Debug_LogFormat_m309087137 (RuntimeObject * __this /* static, unused */, String_t* ___format0, ObjectU5BU5D_t2843939325* ___args1, const RuntimeMethod* method)
 {
@@ -23111,6 +23367,14 @@ IL_000c:
 		return L_1;
 	}
 }
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -29407,6 +29671,40 @@ extern "C" IL2CPP_METHOD_ATTR void Material_CreateWithString_m4283839020 (Runtim
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Single UnityEngine.Mathf::Sin(System.Single)
+extern "C" IL2CPP_METHOD_ATTR float Mathf_Sin_m3411839043 (RuntimeObject * __this /* static, unused */, float ___f0, const RuntimeMethod* method)
+{
+	float V_0 = 0.0f;
+	{
+		float L_0 = ___f0;
+		double L_1 = sin((((double)((double)L_0))));
+		V_0 = (((float)((float)L_1)));
+		goto IL_000f;
+	}
+
+IL_000f:
+	{
+		float L_2 = V_0;
+		return L_2;
+	}
+}
+// System.Single UnityEngine.Mathf::Acos(System.Single)
+extern "C" IL2CPP_METHOD_ATTR float Mathf_Acos_m3996105394 (RuntimeObject * __this /* static, unused */, float ___f0, const RuntimeMethod* method)
+{
+	float V_0 = 0.0f;
+	{
+		float L_0 = ___f0;
+		double L_1 = acos((((double)((double)L_0))));
+		V_0 = (((float)((float)L_1)));
+		goto IL_000f;
+	}
+
+IL_000f:
+	{
+		float L_2 = V_0;
+		return L_2;
+	}
+}
 // System.Single UnityEngine.Mathf::Sqrt(System.Single)
 extern "C" IL2CPP_METHOD_ATTR float Mathf_Sqrt_m3337154061 (RuntimeObject * __this /* static, unused */, float ___f0, const RuntimeMethod* method)
 {
@@ -29872,6 +30170,246 @@ extern "C" IL2CPP_METHOD_ATTR void Mesh_Internal_Create_m2853543051 (RuntimeObje
 	_il2cpp_icall_func = (Mesh_Internal_Create_m2853543051_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Mesh::Internal_Create(UnityEngine.Mesh)");
 	_il2cpp_icall_func(___mono0);
 }
+// System.Void UnityEngine.Mesh::PrintErrorCantAccessChannel(UnityEngine.Mesh/InternalShaderChannel)
+extern "C" IL2CPP_METHOD_ATTR void Mesh_PrintErrorCantAccessChannel_m2109128075 (Mesh_t3648964284 * __this, int32_t ___ch0, const RuntimeMethod* method)
+{
+	typedef void (*Mesh_PrintErrorCantAccessChannel_m2109128075_ftn) (Mesh_t3648964284 *, int32_t);
+	static Mesh_PrintErrorCantAccessChannel_m2109128075_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Mesh_PrintErrorCantAccessChannel_m2109128075_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Mesh::PrintErrorCantAccessChannel(UnityEngine.Mesh/InternalShaderChannel)");
+	_il2cpp_icall_func(__this, ___ch0);
+}
+// System.Boolean UnityEngine.Mesh::HasChannel(UnityEngine.Mesh/InternalShaderChannel)
+extern "C" IL2CPP_METHOD_ATTR bool Mesh_HasChannel_m4256962133 (Mesh_t3648964284 * __this, int32_t ___ch0, const RuntimeMethod* method)
+{
+	typedef bool (*Mesh_HasChannel_m4256962133_ftn) (Mesh_t3648964284 *, int32_t);
+	static Mesh_HasChannel_m4256962133_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Mesh_HasChannel_m4256962133_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Mesh::HasChannel(UnityEngine.Mesh/InternalShaderChannel)");
+	bool retVal = _il2cpp_icall_func(__this, ___ch0);
+	return retVal;
+}
+// System.Void UnityEngine.Mesh::SetArrayForChannelImpl(UnityEngine.Mesh/InternalShaderChannel,UnityEngine.Mesh/InternalVertexChannelType,System.Int32,System.Array,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR void Mesh_SetArrayForChannelImpl_m2642100114 (Mesh_t3648964284 * __this, int32_t ___channel0, int32_t ___format1, int32_t ___dim2, RuntimeArray * ___values3, int32_t ___arraySize4, const RuntimeMethod* method)
+{
+	typedef void (*Mesh_SetArrayForChannelImpl_m2642100114_ftn) (Mesh_t3648964284 *, int32_t, int32_t, int32_t, RuntimeArray *, int32_t);
+	static Mesh_SetArrayForChannelImpl_m2642100114_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Mesh_SetArrayForChannelImpl_m2642100114_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Mesh::SetArrayForChannelImpl(UnityEngine.Mesh/InternalShaderChannel,UnityEngine.Mesh/InternalVertexChannelType,System.Int32,System.Array,System.Int32)");
+	_il2cpp_icall_func(__this, ___channel0, ___format1, ___dim2, ___values3, ___arraySize4);
+}
+// System.Array UnityEngine.Mesh::GetAllocArrayFromChannelImpl(UnityEngine.Mesh/InternalShaderChannel,UnityEngine.Mesh/InternalVertexChannelType,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR RuntimeArray * Mesh_GetAllocArrayFromChannelImpl_m3084065604 (Mesh_t3648964284 * __this, int32_t ___channel0, int32_t ___format1, int32_t ___dim2, const RuntimeMethod* method)
+{
+	typedef RuntimeArray * (*Mesh_GetAllocArrayFromChannelImpl_m3084065604_ftn) (Mesh_t3648964284 *, int32_t, int32_t, int32_t);
+	static Mesh_GetAllocArrayFromChannelImpl_m3084065604_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Mesh_GetAllocArrayFromChannelImpl_m3084065604_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Mesh::GetAllocArrayFromChannelImpl(UnityEngine.Mesh/InternalShaderChannel,UnityEngine.Mesh/InternalVertexChannelType,System.Int32)");
+	RuntimeArray * retVal = _il2cpp_icall_func(__this, ___channel0, ___format1, ___dim2);
+	return retVal;
+}
+// System.Boolean UnityEngine.Mesh::get_canAccess()
+extern "C" IL2CPP_METHOD_ATTR bool Mesh_get_canAccess_m2239225054 (Mesh_t3648964284 * __this, const RuntimeMethod* method)
+{
+	typedef bool (*Mesh_get_canAccess_m2239225054_ftn) (Mesh_t3648964284 *);
+	static Mesh_get_canAccess_m2239225054_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Mesh_get_canAccess_m2239225054_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Mesh::get_canAccess()");
+	bool retVal = _il2cpp_icall_func(__this);
+	return retVal;
+}
+// System.Int32 UnityEngine.Mesh::DefaultDimensionForChannel(UnityEngine.Mesh/InternalShaderChannel)
+extern "C" IL2CPP_METHOD_ATTR int32_t Mesh_DefaultDimensionForChannel_m576040980 (RuntimeObject * __this /* static, unused */, int32_t ___channel0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Mesh_DefaultDimensionForChannel_m576040980_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		int32_t L_0 = ___channel0;
+		if (!L_0)
+		{
+			goto IL_000e;
+		}
+	}
+	{
+		int32_t L_1 = ___channel0;
+		if ((!(((uint32_t)L_1) == ((uint32_t)1))))
+		{
+			goto IL_0015;
+		}
+	}
+
+IL_000e:
+	{
+		V_0 = 3;
+		goto IL_0050;
+	}
+
+IL_0015:
+	{
+		int32_t L_2 = ___channel0;
+		if ((((int32_t)L_2) < ((int32_t)4)))
+		{
+			goto IL_002b;
+		}
+	}
+	{
+		int32_t L_3 = ___channel0;
+		if ((((int32_t)L_3) > ((int32_t)((int32_t)11))))
+		{
+			goto IL_002b;
+		}
+	}
+	{
+		V_0 = 2;
+		goto IL_0050;
+	}
+
+IL_002b:
+	{
+		int32_t L_4 = ___channel0;
+		if ((((int32_t)L_4) == ((int32_t)2)))
+		{
+			goto IL_0039;
+		}
+	}
+	{
+		int32_t L_5 = ___channel0;
+		if ((!(((uint32_t)L_5) == ((uint32_t)3))))
+		{
+			goto IL_0040;
+		}
+	}
+
+IL_0039:
+	{
+		V_0 = 4;
+		goto IL_0050;
+	}
+
+IL_0040:
+	{
+		ArgumentException_t132251570 * L_6 = (ArgumentException_t132251570 *)il2cpp_codegen_object_new(ArgumentException_t132251570_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m1216717135(L_6, _stringLiteral722687134, _stringLiteral470911652, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_6, NULL, Mesh_DefaultDimensionForChannel_m576040980_RuntimeMethod_var);
+	}
+
+IL_0050:
+	{
+		int32_t L_7 = V_0;
+		return L_7;
+	}
+}
+// System.Void UnityEngine.Mesh::SetSizedArrayForChannel(UnityEngine.Mesh/InternalShaderChannel,UnityEngine.Mesh/InternalVertexChannelType,System.Int32,System.Array,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR void Mesh_SetSizedArrayForChannel_m2565120436 (Mesh_t3648964284 * __this, int32_t ___channel0, int32_t ___format1, int32_t ___dim2, RuntimeArray * ___values3, int32_t ___valuesCount4, const RuntimeMethod* method)
+{
+	{
+		bool L_0 = Mesh_get_canAccess_m2239225054(__this, /*hidden argument*/NULL);
+		if (!L_0)
+		{
+			goto IL_001e;
+		}
+	}
+	{
+		int32_t L_1 = ___channel0;
+		int32_t L_2 = ___format1;
+		int32_t L_3 = ___dim2;
+		RuntimeArray * L_4 = ___values3;
+		int32_t L_5 = ___valuesCount4;
+		Mesh_SetArrayForChannelImpl_m2642100114(__this, L_1, L_2, L_3, L_4, L_5, /*hidden argument*/NULL);
+		goto IL_0025;
+	}
+
+IL_001e:
+	{
+		int32_t L_6 = ___channel0;
+		Mesh_PrintErrorCantAccessChannel_m2109128075(__this, L_6, /*hidden argument*/NULL);
+	}
+
+IL_0025:
+	{
+		return;
+	}
+}
+// UnityEngine.Vector3[] UnityEngine.Mesh::get_vertices()
+extern "C" IL2CPP_METHOD_ATTR Vector3U5BU5D_t1718750761* Mesh_get_vertices_m3585684815 (Mesh_t3648964284 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Mesh_get_vertices_m3585684815_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Vector3U5BU5D_t1718750761* V_0 = NULL;
+	{
+		Vector3U5BU5D_t1718750761* L_0 = Mesh_GetAllocArrayFromChannel_TisVector3_t3722313464_m4289135201(__this, 0, /*hidden argument*/Mesh_GetAllocArrayFromChannel_TisVector3_t3722313464_m4289135201_RuntimeMethod_var);
+		V_0 = L_0;
+		goto IL_000e;
+	}
+
+IL_000e:
+	{
+		Vector3U5BU5D_t1718750761* L_1 = V_0;
+		return L_1;
+	}
+}
+// UnityEngine.Vector3[] UnityEngine.Mesh::get_normals()
+extern "C" IL2CPP_METHOD_ATTR Vector3U5BU5D_t1718750761* Mesh_get_normals_m4099615978 (Mesh_t3648964284 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Mesh_get_normals_m4099615978_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Vector3U5BU5D_t1718750761* V_0 = NULL;
+	{
+		Vector3U5BU5D_t1718750761* L_0 = Mesh_GetAllocArrayFromChannel_TisVector3_t3722313464_m4289135201(__this, 1, /*hidden argument*/Mesh_GetAllocArrayFromChannel_TisVector3_t3722313464_m4289135201_RuntimeMethod_var);
+		V_0 = L_0;
+		goto IL_000e;
+	}
+
+IL_000e:
+	{
+		Vector3U5BU5D_t1718750761* L_1 = V_0;
+		return L_1;
+	}
+}
+// System.Void UnityEngine.Mesh::set_colors(UnityEngine.Color[])
+extern "C" IL2CPP_METHOD_ATTR void Mesh_set_colors_m2218481242 (Mesh_t3648964284 * __this, ColorU5BU5D_t941916413* ___value0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Mesh_set_colors_m2218481242_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		ColorU5BU5D_t941916413* L_0 = ___value0;
+		Mesh_SetArrayForChannel_TisColor_t2555686324_m1863272770(__this, 3, L_0, /*hidden argument*/Mesh_SetArrayForChannel_TisColor_t2555686324_m1863272770_RuntimeMethod_var);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -29886,6 +30424,16 @@ extern "C" IL2CPP_METHOD_ATTR void MeshFilter_DontStripMeshFilter_m2877155929 (M
 	{
 		return;
 	}
+}
+// UnityEngine.Mesh UnityEngine.MeshFilter::get_sharedMesh()
+extern "C" IL2CPP_METHOD_ATTR Mesh_t3648964284 * MeshFilter_get_sharedMesh_m1726897210 (MeshFilter_t3523625662 * __this, const RuntimeMethod* method)
+{
+	typedef Mesh_t3648964284 * (*MeshFilter_get_sharedMesh_m1726897210_ftn) (MeshFilter_t3523625662 *);
+	static MeshFilter_get_sharedMesh_m1726897210_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (MeshFilter_get_sharedMesh_m1726897210_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.MeshFilter::get_sharedMesh()");
+	Mesh_t3648964284 * retVal = _il2cpp_icall_func(__this);
+	return retVal;
 }
 #ifdef __clang__
 #pragma clang diagnostic pop
@@ -31749,6 +32297,51 @@ extern "C" IL2CPP_METHOD_ATTR void MessageTypeSubscribers_set_MessageTypeId_m841
 		String_t* L_0 = Guid_ToString_m3279186591((Guid_t *)(&___value0), /*hidden argument*/NULL);
 		__this->set_m_messageTypeId_0(L_0);
 		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Int32 UnityEngine.NoAllocHelpers::SafeLength(System.Array)
+extern "C" IL2CPP_METHOD_ATTR int32_t NoAllocHelpers_SafeLength_m3994544446 (RuntimeObject * __this /* static, unused */, RuntimeArray * ___values0, const RuntimeMethod* method)
+{
+	int32_t V_0 = 0;
+	int32_t G_B3_0 = 0;
+	{
+		RuntimeArray * L_0 = ___values0;
+		if (!L_0)
+		{
+			goto IL_0012;
+		}
+	}
+	{
+		RuntimeArray * L_1 = ___values0;
+		NullCheck(L_1);
+		int32_t L_2 = Array_get_Length_m21610649(L_1, /*hidden argument*/NULL);
+		G_B3_0 = L_2;
+		goto IL_0013;
+	}
+
+IL_0012:
+	{
+		G_B3_0 = 0;
+	}
+
+IL_0013:
+	{
+		V_0 = G_B3_0;
+		goto IL_0019;
+	}
+
+IL_0019:
+	{
+		int32_t L_3 = V_0;
+		return L_3;
 	}
 }
 #ifdef __clang__
@@ -41672,6 +42265,51 @@ IL_002b:
 		return L_7;
 	}
 }
+// System.Void UnityEngine.Vector3::Normalize()
+extern "C" IL2CPP_METHOD_ATTR void Vector3_Normalize_m914904454 (Vector3_t3722313464 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Vector3_Normalize_m914904454_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Vector3_t3722313464_il2cpp_TypeInfo_var);
+		float L_0 = Vector3_Magnitude_m3447562852(NULL /*static, unused*/, (*(Vector3_t3722313464 *)__this), /*hidden argument*/NULL);
+		V_0 = L_0;
+		float L_1 = V_0;
+		if ((!(((float)L_1) > ((float)(1.0E-05f)))))
+		{
+			goto IL_002f;
+		}
+	}
+	{
+		float L_2 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(Vector3_t3722313464_il2cpp_TypeInfo_var);
+		Vector3_t3722313464  L_3 = Vector3_op_Division_m510815599(NULL /*static, unused*/, (*(Vector3_t3722313464 *)__this), L_2, /*hidden argument*/NULL);
+		*(Vector3_t3722313464 *)__this = L_3;
+		goto IL_003a;
+	}
+
+IL_002f:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Vector3_t3722313464_il2cpp_TypeInfo_var);
+		Vector3_t3722313464  L_4 = Vector3_get_zero_m1409827619(NULL /*static, unused*/, /*hidden argument*/NULL);
+		*(Vector3_t3722313464 *)__this = L_4;
+	}
+
+IL_003a:
+	{
+		return;
+	}
+}
+extern "C"  void Vector3_Normalize_m914904454_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	Vector3_t3722313464 * _thisAdjusted = reinterpret_cast<Vector3_t3722313464 *>(__this + 1);
+	Vector3_Normalize_m914904454(_thisAdjusted, method);
+}
 // UnityEngine.Vector3 UnityEngine.Vector3::get_normalized()
 extern "C" IL2CPP_METHOD_ATTR Vector3_t3722313464  Vector3_get_normalized_m2454957984 (Vector3_t3722313464 * __this, const RuntimeMethod* method)
 {
@@ -41700,6 +42338,27 @@ extern "C"  Vector3_t3722313464  Vector3_get_normalized_m2454957984_AdjustorThun
 {
 	Vector3_t3722313464 * _thisAdjusted = reinterpret_cast<Vector3_t3722313464 *>(__this + 1);
 	return Vector3_get_normalized_m2454957984(_thisAdjusted, method);
+}
+// System.Single UnityEngine.Vector3::Dot(UnityEngine.Vector3,UnityEngine.Vector3)
+extern "C" IL2CPP_METHOD_ATTR float Vector3_Dot_m606404487 (RuntimeObject * __this /* static, unused */, Vector3_t3722313464  ___lhs0, Vector3_t3722313464  ___rhs1, const RuntimeMethod* method)
+{
+	float V_0 = 0.0f;
+	{
+		float L_0 = (&___lhs0)->get_x_2();
+		float L_1 = (&___rhs1)->get_x_2();
+		float L_2 = (&___lhs0)->get_y_3();
+		float L_3 = (&___rhs1)->get_y_3();
+		float L_4 = (&___lhs0)->get_z_4();
+		float L_5 = (&___rhs1)->get_z_4();
+		V_0 = ((float)il2cpp_codegen_add((float)((float)il2cpp_codegen_add((float)((float)il2cpp_codegen_multiply((float)L_0, (float)L_1)), (float)((float)il2cpp_codegen_multiply((float)L_2, (float)L_3)))), (float)((float)il2cpp_codegen_multiply((float)L_4, (float)L_5))));
+		goto IL_0036;
+	}
+
+IL_0036:
+	{
+		float L_6 = V_0;
+		return L_6;
+	}
 }
 // System.Single UnityEngine.Vector3::Magnitude(UnityEngine.Vector3)
 extern "C" IL2CPP_METHOD_ATTR float Vector3_Magnitude_m3447562852 (RuntimeObject * __this /* static, unused */, Vector3_t3722313464  ___vector0, const RuntimeMethod* method)

@@ -109,7 +109,7 @@ public class CreateScene : MonoBehaviour{
         go.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition;
         go.GetComponent<Rigidbody>().freezeRotation = true;
 
-        Material mat = new Material(Shader.Find("Custom/NewSurfaceShader"));
+        Material mat = new Material(Shader.Find("Shader Forge/StoneShader"));
         go.GetComponent<MeshRenderer>().material = mat;
     }
 
@@ -133,7 +133,7 @@ public class CreateScene : MonoBehaviour{
         go.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionY;
         go.GetComponent<Rigidbody>().freezeRotation = true;
 
-        Material mat = new Material(Shader.Find("Custom/Box"));
+        Material mat = new Material(Shader.Find("Shader Forge/Box"));
         go.GetComponent<MeshRenderer>().material = mat;
     }
 
@@ -160,7 +160,7 @@ public class CreateScene : MonoBehaviour{
         go.AddComponent<Aim>();
         go.GetComponent<Aim>().rb = go.GetComponent<Rigidbody>();
 
-        Material mat = new Material(Shader.Find("Custom/Aim"));
+        Material mat = new Material(Shader.Find("Shader Forge/Aim"));
         go.GetComponent<MeshRenderer>().material = mat;
     }
 

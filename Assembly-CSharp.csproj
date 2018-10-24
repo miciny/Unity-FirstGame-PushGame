@@ -71,8 +71,8 @@
     <Compile Include="Assets\ShaderForge\Example Assets\Scripts\EditorLabel.cs" />
     <Compile Include="Assets\ShaderForge\Example Assets\Scripts\EnableCameraDepthInForward.cs" />
     <Compile Include="Assets\ShaderForge\Example Assets\Scripts\SoftNormalsToVertexColor.cs" />
-    <None Include="Assets\Resources\Black.shader" />
     <None Include="Assets\ShaderForge\Readme.txt" />
+    <None Include="Assets\Resources\StoneShader.shader" />
     <None Include="Assets\ShaderForge\Example Assets\Shaders\Vegetation.shader" />
     <None Include="Assets\ShaderForge\Example Assets\Shaders\VertexAnimation.shader" />
     <None Include="Assets\Resources\BoxOnAim.shader" />

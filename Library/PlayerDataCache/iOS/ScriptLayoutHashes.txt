@@ -171,3 +171,6 @@ e04611b8715e6833d2bd7010fc6be10b Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 93307bd34e39d73fd24e00ec39c25a91 Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
 226d9b3f624e00f51a28aba8a1f3947d Assembly-CSharp.dll:.Text
 bc23ba07641e0b5d4643a99b0becb4ec Assembly-CSharp.dll:.MobileCamera
+92990e4f61bfd28327fb740f786cf9ff Assembly-CSharp.dll:.SoftNormalsToVertexColor
+486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.EnableCameraDepthInForward
+be9e4a6a6261ee89c58050f7e5630eb9 Assembly-CSharp.dll:.EditorLabel

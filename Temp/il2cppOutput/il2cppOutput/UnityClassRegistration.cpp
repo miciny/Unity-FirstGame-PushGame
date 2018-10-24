@@ -219,7 +219,7 @@ class AnimatorOverrideController;
 class SampleClip; 
 class AudioClip; 
 class Shader; template <> void RegisterUnityClass<Shader>(const char*);
-class ShaderVariantCollection; template <> void RegisterUnityClass<ShaderVariantCollection>(const char*);
+class ShaderVariantCollection; 
 class SpeedTreeWindAsset; 
 class Sprite; template <> void RegisterUnityClass<Sprite>(const char*);
 class SpriteAtlas; 
@@ -278,7 +278,7 @@ void RegisterAllClasses()
 {
 void RegisterBuiltinTypes();
 RegisterBuiltinTypes();
-	//Total: 63 non stripped classes
+	//Total: 62 non stripped classes
 	//0. Rigidbody
 	RegisterUnityClass<Rigidbody>("Physics");
 	//1. Unity::Component
@@ -403,7 +403,5 @@ RegisterBuiltinTypes();
 	RegisterUnityClass<AudioBehaviour>("Audio");
 	//61. AudioListener
 	RegisterUnityClass<AudioListener>("Audio");
-	//62. ShaderVariantCollection
-	RegisterUnityClass<ShaderVariantCollection>("Core");
 
 }
