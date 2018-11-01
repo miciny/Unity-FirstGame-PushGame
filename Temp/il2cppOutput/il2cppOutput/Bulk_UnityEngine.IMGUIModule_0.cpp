@@ -161,6 +161,8 @@ struct Transform_1_t1233662018;
 struct Dictionary_2_t1968819495;
 // System.Collections.Generic.Dictionary`2<System.Int32,UnityEngine.GUILayoutUtility/LayoutCache>
 struct Dictionary_2_t3261990503;
+// System.Collections.Generic.Dictionary`2<System.String,System.Int32>
+struct Dictionary_2_t2736202052;
 // System.Collections.Generic.Dictionary`2<System.String,UnityEngine.GUIStyle>
 struct Dictionary_2_t3742157810;
 // System.Collections.Generic.IEqualityComparer`1<System.Int32>
@@ -410,10 +412,7 @@ extern const uint32_t GUI_Button_m1518979886_MetadataUsageId;
 extern const uint32_t GUI_Button_m1546789121_MetadataUsageId;
 extern const uint32_t GUI_CallWindowDelegate_m3309453386_MetadataUsageId;
 extern const uint32_t GUI_DoButton_m3631925833_MetadataUsageId;
-extern const uint32_t GUI_DoLabel_m1422046243_MetadataUsageId;
 extern const uint32_t GUI_DoSetSkin_m604425702_MetadataUsageId;
-extern const uint32_t GUI_Label_m2454565404_MetadataUsageId;
-extern const uint32_t GUI_Label_m3404668030_MetadataUsageId;
 extern const uint32_t GUI__cctor_m3051457990_MetadataUsageId;
 extern const uint32_t GUI_get_skin_m1874615010_MetadataUsageId;
 extern const uint32_t GUI_set_nextScrollStepTime_m1026410471_MetadataUsageId;
@@ -2704,6 +2703,8 @@ public:
 	Event_t2956885303 * ___s_Current_1;
 	// UnityEngine.Event UnityEngine.Event::s_MasterEvent
 	Event_t2956885303 * ___s_MasterEvent_2;
+	// System.Collections.Generic.Dictionary`2<System.String,System.Int32> UnityEngine.Event::<>f__switch$map0
+	Dictionary_2_t2736202052 * ___U3CU3Ef__switchU24map0_3;
 
 public:
 	inline static int32_t get_offset_of_s_Current_1() { return static_cast<int32_t>(offsetof(Event_t2956885303_StaticFields, ___s_Current_1)); }
@@ -2722,6 +2723,15 @@ public:
 	{
 		___s_MasterEvent_2 = value;
 		Il2CppCodeGenWriteBarrier((&___s_MasterEvent_2), value);
+	}
+
+	inline static int32_t get_offset_of_U3CU3Ef__switchU24map0_3() { return static_cast<int32_t>(offsetof(Event_t2956885303_StaticFields, ___U3CU3Ef__switchU24map0_3)); }
+	inline Dictionary_2_t2736202052 * get_U3CU3Ef__switchU24map0_3() const { return ___U3CU3Ef__switchU24map0_3; }
+	inline Dictionary_2_t2736202052 ** get_address_of_U3CU3Ef__switchU24map0_3() { return &___U3CU3Ef__switchU24map0_3; }
+	inline void set_U3CU3Ef__switchU24map0_3(Dictionary_2_t2736202052 * value)
+	{
+		___U3CU3Ef__switchU24map0_3 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CU3Ef__switchU24map0_3), value);
 	}
 };
 
@@ -3318,35 +3328,35 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // DBLCLICKSNAPPING_T2629979741_H
-#ifndef TOUCHSCREENKEYBOARD_T731888065_H
-#define TOUCHSCREENKEYBOARD_T731888065_H
+#ifndef TOUCHSCREENKEYBOARDTYPE_T1530597702_H
+#define TOUCHSCREENKEYBOARDTYPE_T1530597702_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// UnityEngine.TouchScreenKeyboard
-struct  TouchScreenKeyboard_t731888065  : public RuntimeObject
+// UnityEngine.TouchScreenKeyboardType
+struct  TouchScreenKeyboardType_t1530597702 
 {
 public:
-	// System.IntPtr UnityEngine.TouchScreenKeyboard::m_Ptr
-	intptr_t ___m_Ptr_0;
+	// System.Int32 UnityEngine.TouchScreenKeyboardType::value__
+	int32_t ___value___1;
 
 public:
-	inline static int32_t get_offset_of_m_Ptr_0() { return static_cast<int32_t>(offsetof(TouchScreenKeyboard_t731888065, ___m_Ptr_0)); }
-	inline intptr_t get_m_Ptr_0() const { return ___m_Ptr_0; }
-	inline intptr_t* get_address_of_m_Ptr_0() { return &___m_Ptr_0; }
-	inline void set_m_Ptr_0(intptr_t value)
+	inline static int32_t get_offset_of_value___1() { return static_cast<int32_t>(offsetof(TouchScreenKeyboardType_t1530597702, ___value___1)); }
+	inline int32_t get_value___1() const { return ___value___1; }
+	inline int32_t* get_address_of_value___1() { return &___value___1; }
+	inline void set_value___1(int32_t value)
 	{
-		___m_Ptr_0 = value;
+		___value___1 = value;
 	}
 };
 
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // TOUCHSCREENKEYBOARD_T731888065_H
+#endif // TOUCHSCREENKEYBOARDTYPE_T1530597702_H
 #ifndef DATETIME_T3738529785_H
 #define DATETIME_T3738529785_H
 #ifdef __clang__
@@ -4403,6 +4413,81 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // TEXTURE_T3661962703_H
+#ifndef TOUCHSCREENKEYBOARD_T731888065_H
+#define TOUCHSCREENKEYBOARD_T731888065_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UnityEngine.TouchScreenKeyboard
+struct  TouchScreenKeyboard_t731888065  : public RuntimeObject
+{
+public:
+	// System.IntPtr UnityEngine.TouchScreenKeyboard::m_Ptr
+	intptr_t ___m_Ptr_0;
+	// System.Boolean UnityEngine.TouchScreenKeyboard::<canGetSelection>k__BackingField
+	bool ___U3CcanGetSelectionU3Ek__BackingField_2;
+	// System.Boolean UnityEngine.TouchScreenKeyboard::<canSetSelection>k__BackingField
+	bool ___U3CcanSetSelectionU3Ek__BackingField_3;
+	// UnityEngine.TouchScreenKeyboardType UnityEngine.TouchScreenKeyboard::<type>k__BackingField
+	int32_t ___U3CtypeU3Ek__BackingField_4;
+
+public:
+	inline static int32_t get_offset_of_m_Ptr_0() { return static_cast<int32_t>(offsetof(TouchScreenKeyboard_t731888065, ___m_Ptr_0)); }
+	inline intptr_t get_m_Ptr_0() const { return ___m_Ptr_0; }
+	inline intptr_t* get_address_of_m_Ptr_0() { return &___m_Ptr_0; }
+	inline void set_m_Ptr_0(intptr_t value)
+	{
+		___m_Ptr_0 = value;
+	}
+
+	inline static int32_t get_offset_of_U3CcanGetSelectionU3Ek__BackingField_2() { return static_cast<int32_t>(offsetof(TouchScreenKeyboard_t731888065, ___U3CcanGetSelectionU3Ek__BackingField_2)); }
+	inline bool get_U3CcanGetSelectionU3Ek__BackingField_2() const { return ___U3CcanGetSelectionU3Ek__BackingField_2; }
+	inline bool* get_address_of_U3CcanGetSelectionU3Ek__BackingField_2() { return &___U3CcanGetSelectionU3Ek__BackingField_2; }
+	inline void set_U3CcanGetSelectionU3Ek__BackingField_2(bool value)
+	{
+		___U3CcanGetSelectionU3Ek__BackingField_2 = value;
+	}
+
+	inline static int32_t get_offset_of_U3CcanSetSelectionU3Ek__BackingField_3() { return static_cast<int32_t>(offsetof(TouchScreenKeyboard_t731888065, ___U3CcanSetSelectionU3Ek__BackingField_3)); }
+	inline bool get_U3CcanSetSelectionU3Ek__BackingField_3() const { return ___U3CcanSetSelectionU3Ek__BackingField_3; }
+	inline bool* get_address_of_U3CcanSetSelectionU3Ek__BackingField_3() { return &___U3CcanSetSelectionU3Ek__BackingField_3; }
+	inline void set_U3CcanSetSelectionU3Ek__BackingField_3(bool value)
+	{
+		___U3CcanSetSelectionU3Ek__BackingField_3 = value;
+	}
+
+	inline static int32_t get_offset_of_U3CtypeU3Ek__BackingField_4() { return static_cast<int32_t>(offsetof(TouchScreenKeyboard_t731888065, ___U3CtypeU3Ek__BackingField_4)); }
+	inline int32_t get_U3CtypeU3Ek__BackingField_4() const { return ___U3CtypeU3Ek__BackingField_4; }
+	inline int32_t* get_address_of_U3CtypeU3Ek__BackingField_4() { return &___U3CtypeU3Ek__BackingField_4; }
+	inline void set_U3CtypeU3Ek__BackingField_4(int32_t value)
+	{
+		___U3CtypeU3Ek__BackingField_4 = value;
+	}
+};
+
+struct TouchScreenKeyboard_t731888065_StaticFields
+{
+public:
+	// System.Boolean UnityEngine.TouchScreenKeyboard::<hideInput>k__BackingField
+	bool ___U3ChideInputU3Ek__BackingField_1;
+
+public:
+	inline static int32_t get_offset_of_U3ChideInputU3Ek__BackingField_1() { return static_cast<int32_t>(offsetof(TouchScreenKeyboard_t731888065_StaticFields, ___U3ChideInputU3Ek__BackingField_1)); }
+	inline bool get_U3ChideInputU3Ek__BackingField_1() const { return ___U3ChideInputU3Ek__BackingField_1; }
+	inline bool* get_address_of_U3ChideInputU3Ek__BackingField_1() { return &___U3ChideInputU3Ek__BackingField_1; }
+	inline void set_U3ChideInputU3Ek__BackingField_1(bool value)
+	{
+		___U3ChideInputU3Ek__BackingField_1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // TOUCHSCREENKEYBOARD_T731888065_H
 #ifndef ACTION_T1264377477_H
 #define ACTION_T1264377477_H
 #ifdef __clang__
@@ -5332,8 +5417,6 @@ extern "C" IL2CPP_METHOD_ATTR void GenericStack__ctor_m933681517 (GenericStack_t
 extern "C" IL2CPP_METHOD_ATTR DateTime_t3738529785  DateTime_get_Now_m1277138875 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method);
 // System.Void UnityEngine.GUI::set_nextScrollStepTime(System.DateTime)
 extern "C" IL2CPP_METHOD_ATTR void GUI_set_nextScrollStepTime_m1026410471 (RuntimeObject * __this /* static, unused */, DateTime_t3738529785  ___value0, const RuntimeMethod* method);
-// System.Void UnityEngine.GUI::DoLabel_Injected(UnityEngine.Rect&,UnityEngine.GUIContent,System.IntPtr)
-extern "C" IL2CPP_METHOD_ATTR void GUI_DoLabel_Injected_m3504686382 (RuntimeObject * __this /* static, unused */, Rect_t2360479859 * ___position0, GUIContent_t3050628031 * ___content1, intptr_t ___style2, const RuntimeMethod* method);
 // System.Boolean UnityEngine.GUI::DoButton_Injected(UnityEngine.Rect&,UnityEngine.GUIContent,System.IntPtr)
 extern "C" IL2CPP_METHOD_ATTR bool GUI_DoButton_Injected_m3694008822 (RuntimeObject * __this /* static, unused */, Rect_t2360479859 * ___position0, GUIContent_t3050628031 * ___content1, intptr_t ___style2, const RuntimeMethod* method);
 // System.Void UnityEngine.GUIUtility::CheckOnGUI()
@@ -5348,12 +5431,6 @@ extern "C" IL2CPP_METHOD_ATTR GUISkin_t1244372282 * GUIUtility_GetDefaultSkin_m1
 extern "C" IL2CPP_METHOD_ATTR void GUISkin_MakeCurrent_m3239192349 (GUISkin_t1244372282 * __this, const RuntimeMethod* method);
 // UnityEngine.GUIContent UnityEngine.GUIContent::Temp(System.String)
 extern "C" IL2CPP_METHOD_ATTR GUIContent_t3050628031 * GUIContent_Temp_m3538793263 (RuntimeObject * __this /* static, unused */, String_t* ___t0, const RuntimeMethod* method);
-// UnityEngine.GUIStyle UnityEngine.GUISkin::get_label()
-extern "C" IL2CPP_METHOD_ATTR GUIStyle_t3956901511 * GUISkin_get_label_m1693050720 (GUISkin_t1244372282 * __this, const RuntimeMethod* method);
-// System.Void UnityEngine.GUI::Label(UnityEngine.Rect,UnityEngine.GUIContent,UnityEngine.GUIStyle)
-extern "C" IL2CPP_METHOD_ATTR void GUI_Label_m3404668030 (RuntimeObject * __this /* static, unused */, Rect_t2360479859  ___position0, GUIContent_t3050628031 * ___content1, GUIStyle_t3956901511 * ___style2, const RuntimeMethod* method);
-// System.Void UnityEngine.GUI::DoLabel(UnityEngine.Rect,UnityEngine.GUIContent,System.IntPtr)
-extern "C" IL2CPP_METHOD_ATTR void GUI_DoLabel_m1422046243 (RuntimeObject * __this /* static, unused */, Rect_t2360479859  ___position0, GUIContent_t3050628031 * ___content1, intptr_t ___style2, const RuntimeMethod* method);
 // UnityEngine.GUIStyle UnityEngine.GUISkin::get_button()
 extern "C" IL2CPP_METHOD_ATTR GUIStyle_t3956901511 * GUISkin_get_button_m2792560996 (GUISkin_t1244372282 * __this, const RuntimeMethod* method);
 // System.Boolean UnityEngine.GUI::Button(UnityEngine.Rect,UnityEngine.GUIContent,UnityEngine.GUIStyle)
@@ -5689,6 +5766,16 @@ extern "C" void Event_t2956885303_marshal_com_back(const Event_t2956885303_marsh
 extern "C" void Event_t2956885303_marshal_com_cleanup(Event_t2956885303_marshaled_com& marshaled)
 {
 }
+// System.Void UnityEngine.Event::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void Event__ctor_m3316259149 (Event_t2956885303 * __this, const RuntimeMethod* method)
+{
+	{
+		Object__ctor_m297566312(__this, /*hidden argument*/NULL);
+		intptr_t L_0 = Event_Internal_Create_m1213874754(NULL /*static, unused*/, 0, /*hidden argument*/NULL);
+		__this->set_m_Ptr_0(L_0);
+		return;
+	}
+}
 // System.Void UnityEngine.Event::.ctor(System.Int32)
 extern "C" IL2CPP_METHOD_ATTR void Event__ctor_m526447123 (Event_t2956885303 * __this, int32_t ___displayIndex0, const RuntimeMethod* method)
 {
@@ -5699,6 +5786,16 @@ extern "C" IL2CPP_METHOD_ATTR void Event__ctor_m526447123 (Event_t2956885303 * _
 		__this->set_m_Ptr_0(L_1);
 		return;
 	}
+}
+// UnityEngine.EventType UnityEngine.Event::get_rawType()
+extern "C" IL2CPP_METHOD_ATTR int32_t Event_get_rawType_m2996166859 (Event_t2956885303 * __this, const RuntimeMethod* method)
+{
+	typedef int32_t (*Event_get_rawType_m2996166859_ftn) (Event_t2956885303 *);
+	static Event_get_rawType_m2996166859_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Event_get_rawType_m2996166859_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Event::get_rawType()");
+	int32_t retVal = _il2cpp_icall_func(__this);
+	return retVal;
 }
 // UnityEngine.Vector2 UnityEngine.Event::get_mousePosition()
 extern "C" IL2CPP_METHOD_ATTR Vector2_t2156229523  Event_get_mousePosition_m733809635 (Event_t2956885303 * __this, const RuntimeMethod* method)
@@ -5788,6 +5885,16 @@ extern "C" IL2CPP_METHOD_ATTR void Event_Internal_Destroy_m928770705 (RuntimeObj
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Event_Internal_Destroy_m928770705_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Event::Internal_Destroy(System.IntPtr)");
 	_il2cpp_icall_func(___ptr0);
+}
+// System.Boolean UnityEngine.Event::PopEvent(UnityEngine.Event)
+extern "C" IL2CPP_METHOD_ATTR bool Event_PopEvent_m2275423287 (RuntimeObject * __this /* static, unused */, Event_t2956885303 * ___outEvent0, const RuntimeMethod* method)
+{
+	typedef bool (*Event_PopEvent_m2275423287_ftn) (Event_t2956885303 *);
+	static Event_PopEvent_m2275423287_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Event_PopEvent_m2275423287_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Event::PopEvent(UnityEngine.Event)");
+	bool retVal = _il2cpp_icall_func(___outEvent0);
+	return retVal;
 }
 // System.Void UnityEngine.Event::Internal_SetNativeEvent(System.IntPtr)
 extern "C" IL2CPP_METHOD_ATTR void Event_Internal_SetNativeEvent_m1397431767 (RuntimeObject * __this /* static, unused */, intptr_t ___ptr0, const RuntimeMethod* method)
@@ -6500,23 +6607,6 @@ extern "C" IL2CPP_METHOD_ATTR void GUI_set_changed_m535954674 (RuntimeObject * _
 	_il2cpp_icall_func = (GUI_set_changed_m535954674_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.GUI::set_changed(System.Boolean)");
 	_il2cpp_icall_func(___value0);
 }
-// System.Void UnityEngine.GUI::DoLabel(UnityEngine.Rect,UnityEngine.GUIContent,System.IntPtr)
-extern "C" IL2CPP_METHOD_ATTR void GUI_DoLabel_m1422046243 (RuntimeObject * __this /* static, unused */, Rect_t2360479859  ___position0, GUIContent_t3050628031 * ___content1, intptr_t ___style2, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (GUI_DoLabel_m1422046243_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		GUIContent_t3050628031 * L_0 = ___content1;
-		intptr_t L_1 = ___style2;
-		IL2CPP_RUNTIME_CLASS_INIT(GUI_t1624858472_il2cpp_TypeInfo_var);
-		GUI_DoLabel_Injected_m3504686382(NULL /*static, unused*/, (Rect_t2360479859 *)(&___position0), L_0, L_1, /*hidden argument*/NULL);
-		return;
-	}
-}
 // System.Boolean UnityEngine.GUI::DoButton(UnityEngine.Rect,UnityEngine.GUIContent,System.IntPtr)
 extern "C" IL2CPP_METHOD_ATTR bool GUI_DoButton_m3631925833 (RuntimeObject * __this /* static, unused */, Rect_t2360479859  ___position0, GUIContent_t3050628031 * ___content1, intptr_t ___style2, const RuntimeMethod* method)
 {
@@ -6622,49 +6712,6 @@ IL_0013:
 		GUISkin_t1244372282 * L_4 = ___newSkin0;
 		NullCheck(L_4);
 		GUISkin_MakeCurrent_m3239192349(L_4, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void UnityEngine.GUI::Label(UnityEngine.Rect,System.String)
-extern "C" IL2CPP_METHOD_ATTR void GUI_Label_m2454565404 (RuntimeObject * __this /* static, unused */, Rect_t2360479859  ___position0, String_t* ___text1, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (GUI_Label_m2454565404_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		Rect_t2360479859  L_0 = ___position0;
-		String_t* L_1 = ___text1;
-		IL2CPP_RUNTIME_CLASS_INIT(GUIContent_t3050628031_il2cpp_TypeInfo_var);
-		GUIContent_t3050628031 * L_2 = GUIContent_Temp_m3538793263(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(GUI_t1624858472_il2cpp_TypeInfo_var);
-		GUISkin_t1244372282 * L_3 = ((GUI_t1624858472_StaticFields*)il2cpp_codegen_static_fields_for(GUI_t1624858472_il2cpp_TypeInfo_var))->get_s_Skin_9();
-		NullCheck(L_3);
-		GUIStyle_t3956901511 * L_4 = GUISkin_get_label_m1693050720(L_3, /*hidden argument*/NULL);
-		GUI_Label_m3404668030(NULL /*static, unused*/, L_0, L_2, L_4, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void UnityEngine.GUI::Label(UnityEngine.Rect,UnityEngine.GUIContent,UnityEngine.GUIStyle)
-extern "C" IL2CPP_METHOD_ATTR void GUI_Label_m3404668030 (RuntimeObject * __this /* static, unused */, Rect_t2360479859  ___position0, GUIContent_t3050628031 * ___content1, GUIStyle_t3956901511 * ___style2, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (GUI_Label_m3404668030_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		GUIUtility_CheckOnGUI_m3924092168(NULL /*static, unused*/, /*hidden argument*/NULL);
-		Rect_t2360479859  L_0 = ___position0;
-		GUIContent_t3050628031 * L_1 = ___content1;
-		GUIStyle_t3956901511 * L_2 = ___style2;
-		NullCheck(L_2);
-		intptr_t L_3 = L_2->get_m_Ptr_0();
-		IL2CPP_RUNTIME_CLASS_INIT(GUI_t1624858472_il2cpp_TypeInfo_var);
-		GUI_DoLabel_m1422046243(NULL /*static, unused*/, L_0, L_1, L_3, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -6834,15 +6881,6 @@ IL_0095:
 		GUI_set_skin_m3073574632(NULL /*static, unused*/, L_24, /*hidden argument*/NULL);
 		return;
 	}
-}
-// System.Void UnityEngine.GUI::DoLabel_Injected(UnityEngine.Rect&,UnityEngine.GUIContent,System.IntPtr)
-extern "C" IL2CPP_METHOD_ATTR void GUI_DoLabel_Injected_m3504686382 (RuntimeObject * __this /* static, unused */, Rect_t2360479859 * ___position0, GUIContent_t3050628031 * ___content1, intptr_t ___style2, const RuntimeMethod* method)
-{
-	typedef void (*GUI_DoLabel_Injected_m3504686382_ftn) (Rect_t2360479859 *, GUIContent_t3050628031 *, intptr_t);
-	static GUI_DoLabel_Injected_m3504686382_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (GUI_DoLabel_Injected_m3504686382_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.GUI::DoLabel_Injected(UnityEngine.Rect&,UnityEngine.GUIContent,System.IntPtr)");
-	_il2cpp_icall_func(___position0, ___content1, ___style2);
 }
 // System.Boolean UnityEngine.GUI::DoButton_Injected(UnityEngine.Rect&,UnityEngine.GUIContent,System.IntPtr)
 extern "C" IL2CPP_METHOD_ATTR bool GUI_DoButton_Injected_m3694008822 (RuntimeObject * __this /* static, unused */, Rect_t2360479859 * ___position0, GUIContent_t3050628031 * ___content1, intptr_t ___style2, const RuntimeMethod* method)
@@ -11087,7 +11125,7 @@ extern "C" IL2CPP_METHOD_ATTR void GUILayoutUtility_Begin_m1358735224 (RuntimeOb
 		NullCheck(L_9);
 		GenericStack_t1310059385 * L_10 = L_9->get_layoutGroups_1();
 		NullCheck(L_10);
-		VirtActionInvoker0::Invoke(11 /* System.Void System.Collections.Stack::Clear() */, L_10);
+		VirtActionInvoker0::Invoke(13 /* System.Void System.Collections.Stack::Clear() */, L_10);
 		LayoutCache_t78309876 * L_11 = ((GUILayoutUtility_t66395690_StaticFields*)il2cpp_codegen_static_fields_for(GUILayoutUtility_t66395690_il2cpp_TypeInfo_var))->get_current_2();
 		NullCheck(L_11);
 		GenericStack_t1310059385 * L_12 = L_11->get_layoutGroups_1();
@@ -11095,7 +11133,7 @@ extern "C" IL2CPP_METHOD_ATTR void GUILayoutUtility_Begin_m1358735224 (RuntimeOb
 		NullCheck(L_13);
 		GUILayoutGroup_t2157789695 * L_14 = L_13->get_topLevel_0();
 		NullCheck(L_12);
-		VirtActionInvoker1< RuntimeObject * >::Invoke(17 /* System.Void System.Collections.Stack::Push(System.Object) */, L_12, L_14);
+		VirtActionInvoker1< RuntimeObject * >::Invoke(19 /* System.Void System.Collections.Stack::Push(System.Object) */, L_12, L_14);
 		LayoutCache_t78309876 * L_15 = ((GUILayoutUtility_t66395690_StaticFields*)il2cpp_codegen_static_fields_for(GUILayoutUtility_t66395690_il2cpp_TypeInfo_var))->get_current_2();
 		LayoutCache_t78309876 * L_16 = V_0;
 		GUILayoutGroup_t2157789695 * L_17 = (GUILayoutGroup_t2157789695 *)il2cpp_codegen_object_new(GUILayoutGroup_t2157789695_il2cpp_TypeInfo_var);
@@ -11210,7 +11248,7 @@ IL_0068:
 		NullCheck(L_19);
 		GenericStack_t1310059385 * L_20 = L_19->get_layoutGroups_1();
 		NullCheck(L_20);
-		VirtActionInvoker0::Invoke(11 /* System.Void System.Collections.Stack::Clear() */, L_20);
+		VirtActionInvoker0::Invoke(13 /* System.Void System.Collections.Stack::Clear() */, L_20);
 		LayoutCache_t78309876 * L_21 = ((GUILayoutUtility_t66395690_StaticFields*)il2cpp_codegen_static_fields_for(GUILayoutUtility_t66395690_il2cpp_TypeInfo_var))->get_current_2();
 		NullCheck(L_21);
 		GenericStack_t1310059385 * L_22 = L_21->get_layoutGroups_1();
@@ -11218,7 +11256,7 @@ IL_0068:
 		NullCheck(L_23);
 		GUILayoutGroup_t2157789695 * L_24 = L_23->get_topLevel_0();
 		NullCheck(L_22);
-		VirtActionInvoker1< RuntimeObject * >::Invoke(17 /* System.Void System.Collections.Stack::Push(System.Object) */, L_22, L_24);
+		VirtActionInvoker1< RuntimeObject * >::Invoke(19 /* System.Void System.Collections.Stack::Push(System.Object) */, L_22, L_24);
 		LayoutCache_t78309876 * L_25 = ((GUILayoutUtility_t66395690_StaticFields*)il2cpp_codegen_static_fields_for(GUILayoutUtility_t66395690_il2cpp_TypeInfo_var))->get_current_2();
 		LayoutCache_t78309876 * L_26 = V_0;
 		GUILayoutGroup_t2157789695 * L_27 = (GUILayoutGroup_t2157789695 *)il2cpp_codegen_object_new(GUILayoutGroup_t2157789695_il2cpp_TypeInfo_var);
@@ -11738,7 +11776,7 @@ extern "C" IL2CPP_METHOD_ATTR void LayoutCache__ctor_m3885940174 (LayoutCache_t7
 		GenericStack_t1310059385 * L_3 = __this->get_layoutGroups_1();
 		GUILayoutGroup_t2157789695 * L_4 = __this->get_topLevel_0();
 		NullCheck(L_3);
-		VirtActionInvoker1< RuntimeObject * >::Invoke(17 /* System.Void System.Collections.Stack::Push(System.Object) */, L_3, L_4);
+		VirtActionInvoker1< RuntimeObject * >::Invoke(19 /* System.Void System.Collections.Stack::Push(System.Object) */, L_3, L_4);
 		return;
 	}
 }
@@ -12269,22 +12307,6 @@ extern "C" IL2CPP_METHOD_ATTR Font_t1956802104 * GUISkin_get_font_m3937910082 (G
 IL_000d:
 	{
 		Font_t1956802104 * L_1 = V_0;
-		return L_1;
-	}
-}
-// UnityEngine.GUIStyle UnityEngine.GUISkin::get_label()
-extern "C" IL2CPP_METHOD_ATTR GUIStyle_t3956901511 * GUISkin_get_label_m1693050720 (GUISkin_t1244372282 * __this, const RuntimeMethod* method)
-{
-	GUIStyle_t3956901511 * V_0 = NULL;
-	{
-		GUIStyle_t3956901511 * L_0 = __this->get_m_label_8();
-		V_0 = L_0;
-		goto IL_000d;
-	}
-
-IL_000d:
-	{
-		GUIStyle_t3956901511 * L_1 = V_0;
 		return L_1;
 	}
 }
@@ -13131,6 +13153,25 @@ extern "C" IL2CPP_METHOD_ATTR int32_t GUIUtility_get_guiDepth_m3282451554 (Runti
 	_il2cpp_icall_func = (GUIUtility_get_guiDepth_m3282451554_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.GUIUtility::get_guiDepth()");
 	int32_t retVal = _il2cpp_icall_func();
 	return retVal;
+}
+// System.String UnityEngine.GUIUtility::get_systemCopyBuffer()
+extern "C" IL2CPP_METHOD_ATTR String_t* GUIUtility_get_systemCopyBuffer_m2735901425 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method)
+{
+	typedef String_t* (*GUIUtility_get_systemCopyBuffer_m2735901425_ftn) ();
+	static GUIUtility_get_systemCopyBuffer_m2735901425_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (GUIUtility_get_systemCopyBuffer_m2735901425_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.GUIUtility::get_systemCopyBuffer()");
+	String_t* retVal = _il2cpp_icall_func();
+	return retVal;
+}
+// System.Void UnityEngine.GUIUtility::set_systemCopyBuffer(System.String)
+extern "C" IL2CPP_METHOD_ATTR void GUIUtility_set_systemCopyBuffer_m608712289 (RuntimeObject * __this /* static, unused */, String_t* ___value0, const RuntimeMethod* method)
+{
+	typedef void (*GUIUtility_set_systemCopyBuffer_m608712289_ftn) (String_t*);
+	static GUIUtility_set_systemCopyBuffer_m608712289_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (GUIUtility_set_systemCopyBuffer_m608712289_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.GUIUtility::set_systemCopyBuffer(System.String)");
+	_il2cpp_icall_func(___value0);
 }
 // System.Object UnityEngine.GUIUtility::Internal_GetDefaultSkin(System.Int32)
 extern "C" IL2CPP_METHOD_ATTR RuntimeObject * GUIUtility_Internal_GetDefaultSkin_m995660429 (RuntimeObject * __this /* static, unused */, int32_t ___skinMode0, const RuntimeMethod* method)

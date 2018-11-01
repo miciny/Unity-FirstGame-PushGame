@@ -61,13 +61,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\CS\Aim.cs" />
-    <Compile Include="Assets\CS\CreateScene.cs" />
-    <Compile Include="Assets\CS\MainCamera.cs" />
-    <Compile Include="Assets\CS\Map.cs" />
-    <Compile Include="Assets\CS\MobileCamera.cs" />
-    <Compile Include="Assets\CS\PlayerMove.cs" />
-    <Compile Include="Assets\CS\Text.cs" />
+    <Compile Include="Assets\CS\Camera\CameraFixed.cs" />
+    <Compile Include="Assets\CS\Camera\CameraFollow.cs" />
+    <Compile Include="Assets\CS\Canvas\Button\UIButton.cs" />
+    <Compile Include="Assets\CS\Canvas\MessageBox\MessageBox.cs" />
+    <Compile Include="Assets\CS\Canvas\MessageBox\UIMessage.cs" />
+    <Compile Include="Assets\CS\Canvas\Yaogan\Yaogan.cs" />
+    <Compile Include="Assets\CS\Kill\BaolongAction.cs" />
+    <Compile Include="Assets\CS\Kill\CreateKillScene.cs" />
+    <Compile Include="Assets\CS\Kill\Stone.cs" />
+    <Compile Include="Assets\CS\Push\Aim.cs" />
+    <Compile Include="Assets\CS\Push\CreatePushScene.cs" />
+    <Compile Include="Assets\CS\Push\Map.cs" />
+    <Compile Include="Assets\CS\Push\PlayerMove.cs" />
+    <Compile Include="Assets\CS\Push\TheLabel.cs" />
     <Compile Include="Assets\ShaderForge\Example Assets\Scripts\EditorLabel.cs" />
     <Compile Include="Assets\ShaderForge\Example Assets\Scripts\EnableCameraDepthInForward.cs" />
     <Compile Include="Assets\ShaderForge\Example Assets\Scripts\SoftNormalsToVertexColor.cs" />

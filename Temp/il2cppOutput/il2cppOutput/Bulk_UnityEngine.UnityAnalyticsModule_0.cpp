@@ -213,7 +213,7 @@ extern RuntimeClass* UnityAnalyticsHandler_t3011359618_il2cpp_TypeInfo_var;
 extern String_t* _stringLiteral1202628576;
 extern String_t* _stringLiteral2903831799;
 extern String_t* _stringLiteral3959746398;
-extern const RuntimeMethod* Action_1_Invoke_m1892723854_RuntimeMethod_var;
+extern const RuntimeMethod* Action_1_Invoke_m1933767679_RuntimeMethod_var;
 extern const RuntimeMethod* Action_3_Invoke_m1011371804_RuntimeMethod_var;
 extern const RuntimeMethod* Analytics_CustomEvent_m3835919949_RuntimeMethod_var;
 extern const RuntimeMethod* Analytics_CustomEvent_m692224174_RuntimeMethod_var;
@@ -253,8 +253,8 @@ extern const uint32_t UnityAnalyticsHandler_IsInitialized_m2620746640_MetadataUs
 
 
 
-#ifndef U3CMODULEU3E_T692745532_H
-#define U3CMODULEU3E_T692745532_H
+#ifndef U3CMODULEU3E_T692745539_H
+#define U3CMODULEU3E_T692745539_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -262,7 +262,7 @@ extern const uint32_t UnityAnalyticsHandler_IsInitialized_m2620746640_MetadataUs
 #endif
 
 // <Module>
-struct  U3CModuleU3E_t692745532 
+struct  U3CModuleU3E_t692745539 
 {
 public:
 
@@ -272,7 +272,7 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // U3CMODULEU3E_T692745532_H
+#endif // U3CMODULEU3E_T692745539_H
 #ifndef RUNTIMEOBJECT_H
 #define RUNTIMEOBJECT_H
 #ifdef __clang__
@@ -1402,15 +1402,15 @@ struct  UInt32_t2560061978
 {
 public:
 	// System.UInt32 System.UInt32::m_value
-	uint32_t ___m_value_0;
+	uint32_t ___m_value_2;
 
 public:
-	inline static int32_t get_offset_of_m_value_0() { return static_cast<int32_t>(offsetof(UInt32_t2560061978, ___m_value_0)); }
-	inline uint32_t get_m_value_0() const { return ___m_value_0; }
-	inline uint32_t* get_address_of_m_value_0() { return &___m_value_0; }
-	inline void set_m_value_0(uint32_t value)
+	inline static int32_t get_offset_of_m_value_2() { return static_cast<int32_t>(offsetof(UInt32_t2560061978, ___m_value_2)); }
+	inline uint32_t get_m_value_2() const { return ___m_value_2; }
+	inline uint32_t* get_address_of_m_value_2() { return &___m_value_2; }
+	inline void set_m_value_2(uint32_t value)
 	{
-		___m_value_0 = value;
+		___m_value_2 = value;
 	}
 };
 
@@ -2124,7 +2124,7 @@ extern "C" IL2CPP_METHOD_ATTR RuntimeObject * KeyValuePair_2_get_Key_m1328507389
 // !1 System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>::get_Value()
 extern "C" IL2CPP_METHOD_ATTR RuntimeObject * KeyValuePair_2_get_Value_m3464904234_gshared (KeyValuePair_2_t2530217319 * __this, const RuntimeMethod* method);
 // System.Void System.Action`1<System.Boolean>::Invoke(!0)
-extern "C" IL2CPP_METHOD_ATTR void Action_1_Invoke_m1892723854_gshared (Action_1_t269755560 * __this, bool p0, const RuntimeMethod* method);
+extern "C" IL2CPP_METHOD_ATTR void Action_1_Invoke_m1933767679_gshared (Action_1_t269755560 * __this, bool p0, const RuntimeMethod* method);
 // System.Void System.Action`3<System.Boolean,System.Boolean,System.Int32>::Invoke(!0,!1,!2)
 extern "C" IL2CPP_METHOD_ATTR void Action_3_Invoke_m1011371804_gshared (Action_3_t3050575418 * __this, bool p0, bool p1, int32_t p2, const RuntimeMethod* method);
 
@@ -2213,9 +2213,9 @@ extern "C" IL2CPP_METHOD_ATTR void RemoteConfigSettings_Destroy_m1854335118 (Rem
 // System.Void UnityEngine.RemoteConfigSettings::Internal_Destroy(System.IntPtr)
 extern "C" IL2CPP_METHOD_ATTR void RemoteConfigSettings_Internal_Destroy_m1072151938 (RuntimeObject * __this /* static, unused */, intptr_t ___ptr0, const RuntimeMethod* method);
 // System.Void System.Action`1<System.Boolean>::Invoke(!0)
-inline void Action_1_Invoke_m1892723854 (Action_1_t269755560 * __this, bool p0, const RuntimeMethod* method)
+inline void Action_1_Invoke_m1933767679 (Action_1_t269755560 * __this, bool p0, const RuntimeMethod* method)
 {
-	((  void (*) (Action_1_t269755560 *, bool, const RuntimeMethod*))Action_1_Invoke_m1892723854_gshared)(__this, p0, method);
+	((  void (*) (Action_1_t269755560 *, bool, const RuntimeMethod*))Action_1_Invoke_m1933767679_gshared)(__this, p0, method);
 }
 // System.Void UnityEngine.RemoteSettings/UpdatedEventHandler::Invoke()
 extern "C" IL2CPP_METHOD_ATTR void UpdatedEventHandler_Invoke_m3026613363 (UpdatedEventHandler_t1027848393 * __this, const RuntimeMethod* method);
@@ -3617,7 +3617,7 @@ extern "C" IL2CPP_METHOD_ATTR void RemoteConfigSettings_RemoteConfigSettingsUpda
 		Action_1_t269755560 * L_3 = V_0;
 		bool L_4 = ___wasLastUpdatedFromServer1;
 		NullCheck(L_3);
-		Action_1_Invoke_m1892723854(L_3, L_4, /*hidden argument*/Action_1_Invoke_m1892723854_RuntimeMethod_var);
+		Action_1_Invoke_m1933767679(L_3, L_4, /*hidden argument*/Action_1_Invoke_m1933767679_RuntimeMethod_var);
 	}
 
 IL_0015:

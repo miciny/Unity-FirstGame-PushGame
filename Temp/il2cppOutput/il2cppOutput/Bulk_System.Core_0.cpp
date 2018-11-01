@@ -121,6 +121,8 @@ struct DelegateData_t1677132599;
 struct IAsyncResult_t767004451;
 // System.IntPtr[]
 struct IntPtrU5BU5D_t4013366056;
+// System.MonoTODOAttribute
+struct MonoTODOAttribute_t4131080583;
 // System.NotImplementedException
 struct NotImplementedException_t3489357830;
 // System.ObjectDisposedException
@@ -173,17 +175,17 @@ extern RuntimeClass* ObjectU5BU5D_t2843939325_il2cpp_TypeInfo_var;
 extern RuntimeClass* PaddingMode_t2546806710_il2cpp_TypeInfo_var;
 extern RuntimeClass* String_t_il2cpp_TypeInfo_var;
 extern RuntimeClass* UInt32U5BU5D_t2770800703_il2cpp_TypeInfo_var;
-extern RuntimeField* U3CPrivateImplementationDetailsU3E_t3057255364____U24U24fieldU2D10_9_FieldInfo_var;
-extern RuntimeField* U3CPrivateImplementationDetailsU3E_t3057255364____U24U24fieldU2D11_10_FieldInfo_var;
-extern RuntimeField* U3CPrivateImplementationDetailsU3E_t3057255364____U24U24fieldU2D1_0_FieldInfo_var;
-extern RuntimeField* U3CPrivateImplementationDetailsU3E_t3057255364____U24U24fieldU2D2_1_FieldInfo_var;
-extern RuntimeField* U3CPrivateImplementationDetailsU3E_t3057255364____U24U24fieldU2D3_2_FieldInfo_var;
-extern RuntimeField* U3CPrivateImplementationDetailsU3E_t3057255364____U24U24fieldU2D4_3_FieldInfo_var;
-extern RuntimeField* U3CPrivateImplementationDetailsU3E_t3057255364____U24U24fieldU2D5_4_FieldInfo_var;
-extern RuntimeField* U3CPrivateImplementationDetailsU3E_t3057255364____U24U24fieldU2D6_5_FieldInfo_var;
-extern RuntimeField* U3CPrivateImplementationDetailsU3E_t3057255364____U24U24fieldU2D7_6_FieldInfo_var;
-extern RuntimeField* U3CPrivateImplementationDetailsU3E_t3057255364____U24U24fieldU2D8_7_FieldInfo_var;
-extern RuntimeField* U3CPrivateImplementationDetailsU3E_t3057255364____U24U24fieldU2D9_8_FieldInfo_var;
+extern RuntimeField* U3CPrivateImplementationDetailsU3E_t3057255364____U24U24fieldU2D10_10_FieldInfo_var;
+extern RuntimeField* U3CPrivateImplementationDetailsU3E_t3057255364____U24U24fieldU2D11_11_FieldInfo_var;
+extern RuntimeField* U3CPrivateImplementationDetailsU3E_t3057255364____U24U24fieldU2D1_1_FieldInfo_var;
+extern RuntimeField* U3CPrivateImplementationDetailsU3E_t3057255364____U24U24fieldU2D2_2_FieldInfo_var;
+extern RuntimeField* U3CPrivateImplementationDetailsU3E_t3057255364____U24U24fieldU2D3_3_FieldInfo_var;
+extern RuntimeField* U3CPrivateImplementationDetailsU3E_t3057255364____U24U24fieldU2D4_4_FieldInfo_var;
+extern RuntimeField* U3CPrivateImplementationDetailsU3E_t3057255364____U24U24fieldU2D5_5_FieldInfo_var;
+extern RuntimeField* U3CPrivateImplementationDetailsU3E_t3057255364____U24U24fieldU2D6_6_FieldInfo_var;
+extern RuntimeField* U3CPrivateImplementationDetailsU3E_t3057255364____U24U24fieldU2D7_7_FieldInfo_var;
+extern RuntimeField* U3CPrivateImplementationDetailsU3E_t3057255364____U24U24fieldU2D8_8_FieldInfo_var;
+extern RuntimeField* U3CPrivateImplementationDetailsU3E_t3057255364____U24U24fieldU2D9_9_FieldInfo_var;
 extern String_t* _stringLiteral1561769044;
 extern String_t* _stringLiteral2053830539;
 extern String_t* _stringLiteral2101785501;
@@ -926,6 +928,36 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // U24ARRAYTYPEU24120_T4289081652_H
+#ifndef U24ARRAYTYPEU24136_T1950429486_H
+#define U24ARRAYTYPEU24136_T1950429486_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// <PrivateImplementationDetails>/$ArrayType$136
+struct  U24ArrayTypeU24136_t1950429486 
+{
+public:
+	union
+	{
+		struct
+		{
+			union
+			{
+			};
+		};
+		uint8_t U24ArrayTypeU24136_t1950429486__padding[136];
+	};
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // U24ARRAYTYPEU24136_T1950429486_H
 #ifndef U24ARRAYTYPEU24256_T1929481984_H
 #define U24ARRAYTYPEU24256_T1929481984_H
 #ifdef __clang__
@@ -1161,6 +1193,26 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // INTPTR_T_H
+#ifndef MONOTODOATTRIBUTE_T4131080583_H
+#define MONOTODOATTRIBUTE_T4131080583_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.MonoTODOAttribute
+struct  MonoTODOAttribute_t4131080583  : public Attribute_t861562559
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // MONOTODOATTRIBUTE_T4131080583_H
 #ifndef EXTENSIONATTRIBUTE_T1723066603_H
 #define EXTENSIONATTRIBUTE_T1723066603_H
 #ifdef __clang__
@@ -1391,15 +1443,15 @@ struct  UInt32_t2560061978
 {
 public:
 	// System.UInt32 System.UInt32::m_value
-	uint32_t ___m_value_0;
+	uint32_t ___m_value_2;
 
 public:
-	inline static int32_t get_offset_of_m_value_0() { return static_cast<int32_t>(offsetof(UInt32_t2560061978, ___m_value_0)); }
-	inline uint32_t get_m_value_0() const { return ___m_value_0; }
-	inline uint32_t* get_address_of_m_value_0() { return &___m_value_0; }
-	inline void set_m_value_0(uint32_t value)
+	inline static int32_t get_offset_of_m_value_2() { return static_cast<int32_t>(offsetof(UInt32_t2560061978, ___m_value_2)); }
+	inline uint32_t get_m_value_2() const { return ___m_value_2; }
+	inline uint32_t* get_address_of_m_value_2() { return &___m_value_2; }
+	inline void set_m_value_2(uint32_t value)
 	{
-		___m_value_0 = value;
+		___m_value_2 = value;
 	}
 };
 
@@ -1446,116 +1498,126 @@ public:
 struct U3CPrivateImplementationDetailsU3E_t3057255364_StaticFields
 {
 public:
+	// <PrivateImplementationDetails>/$ArrayType$136 <PrivateImplementationDetails>::$$field-0
+	U24ArrayTypeU24136_t1950429486  ___U24U24fieldU2D0_0;
 	// <PrivateImplementationDetails>/$ArrayType$120 <PrivateImplementationDetails>::$$field-1
-	U24ArrayTypeU24120_t4289081652  ___U24U24fieldU2D1_0;
+	U24ArrayTypeU24120_t4289081652  ___U24U24fieldU2D1_1;
 	// <PrivateImplementationDetails>/$ArrayType$256 <PrivateImplementationDetails>::$$field-2
-	U24ArrayTypeU24256_t1929481984  ___U24U24fieldU2D2_1;
+	U24ArrayTypeU24256_t1929481984  ___U24U24fieldU2D2_2;
 	// <PrivateImplementationDetails>/$ArrayType$256 <PrivateImplementationDetails>::$$field-3
-	U24ArrayTypeU24256_t1929481984  ___U24U24fieldU2D3_2;
+	U24ArrayTypeU24256_t1929481984  ___U24U24fieldU2D3_3;
 	// <PrivateImplementationDetails>/$ArrayType$1024 <PrivateImplementationDetails>::$$field-4
-	U24ArrayTypeU241024_t3907531058  ___U24U24fieldU2D4_3;
+	U24ArrayTypeU241024_t3907531058  ___U24U24fieldU2D4_4;
 	// <PrivateImplementationDetails>/$ArrayType$1024 <PrivateImplementationDetails>::$$field-5
-	U24ArrayTypeU241024_t3907531058  ___U24U24fieldU2D5_4;
+	U24ArrayTypeU241024_t3907531058  ___U24U24fieldU2D5_5;
 	// <PrivateImplementationDetails>/$ArrayType$1024 <PrivateImplementationDetails>::$$field-6
-	U24ArrayTypeU241024_t3907531058  ___U24U24fieldU2D6_5;
+	U24ArrayTypeU241024_t3907531058  ___U24U24fieldU2D6_6;
 	// <PrivateImplementationDetails>/$ArrayType$1024 <PrivateImplementationDetails>::$$field-7
-	U24ArrayTypeU241024_t3907531058  ___U24U24fieldU2D7_6;
+	U24ArrayTypeU241024_t3907531058  ___U24U24fieldU2D7_7;
 	// <PrivateImplementationDetails>/$ArrayType$1024 <PrivateImplementationDetails>::$$field-8
-	U24ArrayTypeU241024_t3907531058  ___U24U24fieldU2D8_7;
+	U24ArrayTypeU241024_t3907531058  ___U24U24fieldU2D8_8;
 	// <PrivateImplementationDetails>/$ArrayType$1024 <PrivateImplementationDetails>::$$field-9
-	U24ArrayTypeU241024_t3907531058  ___U24U24fieldU2D9_8;
+	U24ArrayTypeU241024_t3907531058  ___U24U24fieldU2D9_9;
 	// <PrivateImplementationDetails>/$ArrayType$1024 <PrivateImplementationDetails>::$$field-10
-	U24ArrayTypeU241024_t3907531058  ___U24U24fieldU2D10_9;
+	U24ArrayTypeU241024_t3907531058  ___U24U24fieldU2D10_10;
 	// <PrivateImplementationDetails>/$ArrayType$1024 <PrivateImplementationDetails>::$$field-11
-	U24ArrayTypeU241024_t3907531058  ___U24U24fieldU2D11_10;
+	U24ArrayTypeU241024_t3907531058  ___U24U24fieldU2D11_11;
 
 public:
-	inline static int32_t get_offset_of_U24U24fieldU2D1_0() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255364_StaticFields, ___U24U24fieldU2D1_0)); }
-	inline U24ArrayTypeU24120_t4289081652  get_U24U24fieldU2D1_0() const { return ___U24U24fieldU2D1_0; }
-	inline U24ArrayTypeU24120_t4289081652 * get_address_of_U24U24fieldU2D1_0() { return &___U24U24fieldU2D1_0; }
-	inline void set_U24U24fieldU2D1_0(U24ArrayTypeU24120_t4289081652  value)
+	inline static int32_t get_offset_of_U24U24fieldU2D0_0() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255364_StaticFields, ___U24U24fieldU2D0_0)); }
+	inline U24ArrayTypeU24136_t1950429486  get_U24U24fieldU2D0_0() const { return ___U24U24fieldU2D0_0; }
+	inline U24ArrayTypeU24136_t1950429486 * get_address_of_U24U24fieldU2D0_0() { return &___U24U24fieldU2D0_0; }
+	inline void set_U24U24fieldU2D0_0(U24ArrayTypeU24136_t1950429486  value)
 	{
-		___U24U24fieldU2D1_0 = value;
+		___U24U24fieldU2D0_0 = value;
 	}
 
-	inline static int32_t get_offset_of_U24U24fieldU2D2_1() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255364_StaticFields, ___U24U24fieldU2D2_1)); }
-	inline U24ArrayTypeU24256_t1929481984  get_U24U24fieldU2D2_1() const { return ___U24U24fieldU2D2_1; }
-	inline U24ArrayTypeU24256_t1929481984 * get_address_of_U24U24fieldU2D2_1() { return &___U24U24fieldU2D2_1; }
-	inline void set_U24U24fieldU2D2_1(U24ArrayTypeU24256_t1929481984  value)
+	inline static int32_t get_offset_of_U24U24fieldU2D1_1() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255364_StaticFields, ___U24U24fieldU2D1_1)); }
+	inline U24ArrayTypeU24120_t4289081652  get_U24U24fieldU2D1_1() const { return ___U24U24fieldU2D1_1; }
+	inline U24ArrayTypeU24120_t4289081652 * get_address_of_U24U24fieldU2D1_1() { return &___U24U24fieldU2D1_1; }
+	inline void set_U24U24fieldU2D1_1(U24ArrayTypeU24120_t4289081652  value)
 	{
-		___U24U24fieldU2D2_1 = value;
+		___U24U24fieldU2D1_1 = value;
 	}
 
-	inline static int32_t get_offset_of_U24U24fieldU2D3_2() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255364_StaticFields, ___U24U24fieldU2D3_2)); }
-	inline U24ArrayTypeU24256_t1929481984  get_U24U24fieldU2D3_2() const { return ___U24U24fieldU2D3_2; }
-	inline U24ArrayTypeU24256_t1929481984 * get_address_of_U24U24fieldU2D3_2() { return &___U24U24fieldU2D3_2; }
-	inline void set_U24U24fieldU2D3_2(U24ArrayTypeU24256_t1929481984  value)
+	inline static int32_t get_offset_of_U24U24fieldU2D2_2() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255364_StaticFields, ___U24U24fieldU2D2_2)); }
+	inline U24ArrayTypeU24256_t1929481984  get_U24U24fieldU2D2_2() const { return ___U24U24fieldU2D2_2; }
+	inline U24ArrayTypeU24256_t1929481984 * get_address_of_U24U24fieldU2D2_2() { return &___U24U24fieldU2D2_2; }
+	inline void set_U24U24fieldU2D2_2(U24ArrayTypeU24256_t1929481984  value)
 	{
-		___U24U24fieldU2D3_2 = value;
+		___U24U24fieldU2D2_2 = value;
 	}
 
-	inline static int32_t get_offset_of_U24U24fieldU2D4_3() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255364_StaticFields, ___U24U24fieldU2D4_3)); }
-	inline U24ArrayTypeU241024_t3907531058  get_U24U24fieldU2D4_3() const { return ___U24U24fieldU2D4_3; }
-	inline U24ArrayTypeU241024_t3907531058 * get_address_of_U24U24fieldU2D4_3() { return &___U24U24fieldU2D4_3; }
-	inline void set_U24U24fieldU2D4_3(U24ArrayTypeU241024_t3907531058  value)
+	inline static int32_t get_offset_of_U24U24fieldU2D3_3() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255364_StaticFields, ___U24U24fieldU2D3_3)); }
+	inline U24ArrayTypeU24256_t1929481984  get_U24U24fieldU2D3_3() const { return ___U24U24fieldU2D3_3; }
+	inline U24ArrayTypeU24256_t1929481984 * get_address_of_U24U24fieldU2D3_3() { return &___U24U24fieldU2D3_3; }
+	inline void set_U24U24fieldU2D3_3(U24ArrayTypeU24256_t1929481984  value)
 	{
-		___U24U24fieldU2D4_3 = value;
+		___U24U24fieldU2D3_3 = value;
 	}
 
-	inline static int32_t get_offset_of_U24U24fieldU2D5_4() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255364_StaticFields, ___U24U24fieldU2D5_4)); }
-	inline U24ArrayTypeU241024_t3907531058  get_U24U24fieldU2D5_4() const { return ___U24U24fieldU2D5_4; }
-	inline U24ArrayTypeU241024_t3907531058 * get_address_of_U24U24fieldU2D5_4() { return &___U24U24fieldU2D5_4; }
-	inline void set_U24U24fieldU2D5_4(U24ArrayTypeU241024_t3907531058  value)
+	inline static int32_t get_offset_of_U24U24fieldU2D4_4() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255364_StaticFields, ___U24U24fieldU2D4_4)); }
+	inline U24ArrayTypeU241024_t3907531058  get_U24U24fieldU2D4_4() const { return ___U24U24fieldU2D4_4; }
+	inline U24ArrayTypeU241024_t3907531058 * get_address_of_U24U24fieldU2D4_4() { return &___U24U24fieldU2D4_4; }
+	inline void set_U24U24fieldU2D4_4(U24ArrayTypeU241024_t3907531058  value)
 	{
-		___U24U24fieldU2D5_4 = value;
+		___U24U24fieldU2D4_4 = value;
 	}
 
-	inline static int32_t get_offset_of_U24U24fieldU2D6_5() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255364_StaticFields, ___U24U24fieldU2D6_5)); }
-	inline U24ArrayTypeU241024_t3907531058  get_U24U24fieldU2D6_5() const { return ___U24U24fieldU2D6_5; }
-	inline U24ArrayTypeU241024_t3907531058 * get_address_of_U24U24fieldU2D6_5() { return &___U24U24fieldU2D6_5; }
-	inline void set_U24U24fieldU2D6_5(U24ArrayTypeU241024_t3907531058  value)
+	inline static int32_t get_offset_of_U24U24fieldU2D5_5() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255364_StaticFields, ___U24U24fieldU2D5_5)); }
+	inline U24ArrayTypeU241024_t3907531058  get_U24U24fieldU2D5_5() const { return ___U24U24fieldU2D5_5; }
+	inline U24ArrayTypeU241024_t3907531058 * get_address_of_U24U24fieldU2D5_5() { return &___U24U24fieldU2D5_5; }
+	inline void set_U24U24fieldU2D5_5(U24ArrayTypeU241024_t3907531058  value)
 	{
-		___U24U24fieldU2D6_5 = value;
+		___U24U24fieldU2D5_5 = value;
 	}
 
-	inline static int32_t get_offset_of_U24U24fieldU2D7_6() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255364_StaticFields, ___U24U24fieldU2D7_6)); }
-	inline U24ArrayTypeU241024_t3907531058  get_U24U24fieldU2D7_6() const { return ___U24U24fieldU2D7_6; }
-	inline U24ArrayTypeU241024_t3907531058 * get_address_of_U24U24fieldU2D7_6() { return &___U24U24fieldU2D7_6; }
-	inline void set_U24U24fieldU2D7_6(U24ArrayTypeU241024_t3907531058  value)
+	inline static int32_t get_offset_of_U24U24fieldU2D6_6() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255364_StaticFields, ___U24U24fieldU2D6_6)); }
+	inline U24ArrayTypeU241024_t3907531058  get_U24U24fieldU2D6_6() const { return ___U24U24fieldU2D6_6; }
+	inline U24ArrayTypeU241024_t3907531058 * get_address_of_U24U24fieldU2D6_6() { return &___U24U24fieldU2D6_6; }
+	inline void set_U24U24fieldU2D6_6(U24ArrayTypeU241024_t3907531058  value)
 	{
-		___U24U24fieldU2D7_6 = value;
+		___U24U24fieldU2D6_6 = value;
 	}
 
-	inline static int32_t get_offset_of_U24U24fieldU2D8_7() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255364_StaticFields, ___U24U24fieldU2D8_7)); }
-	inline U24ArrayTypeU241024_t3907531058  get_U24U24fieldU2D8_7() const { return ___U24U24fieldU2D8_7; }
-	inline U24ArrayTypeU241024_t3907531058 * get_address_of_U24U24fieldU2D8_7() { return &___U24U24fieldU2D8_7; }
-	inline void set_U24U24fieldU2D8_7(U24ArrayTypeU241024_t3907531058  value)
+	inline static int32_t get_offset_of_U24U24fieldU2D7_7() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255364_StaticFields, ___U24U24fieldU2D7_7)); }
+	inline U24ArrayTypeU241024_t3907531058  get_U24U24fieldU2D7_7() const { return ___U24U24fieldU2D7_7; }
+	inline U24ArrayTypeU241024_t3907531058 * get_address_of_U24U24fieldU2D7_7() { return &___U24U24fieldU2D7_7; }
+	inline void set_U24U24fieldU2D7_7(U24ArrayTypeU241024_t3907531058  value)
 	{
-		___U24U24fieldU2D8_7 = value;
+		___U24U24fieldU2D7_7 = value;
 	}
 
-	inline static int32_t get_offset_of_U24U24fieldU2D9_8() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255364_StaticFields, ___U24U24fieldU2D9_8)); }
-	inline U24ArrayTypeU241024_t3907531058  get_U24U24fieldU2D9_8() const { return ___U24U24fieldU2D9_8; }
-	inline U24ArrayTypeU241024_t3907531058 * get_address_of_U24U24fieldU2D9_8() { return &___U24U24fieldU2D9_8; }
-	inline void set_U24U24fieldU2D9_8(U24ArrayTypeU241024_t3907531058  value)
+	inline static int32_t get_offset_of_U24U24fieldU2D8_8() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255364_StaticFields, ___U24U24fieldU2D8_8)); }
+	inline U24ArrayTypeU241024_t3907531058  get_U24U24fieldU2D8_8() const { return ___U24U24fieldU2D8_8; }
+	inline U24ArrayTypeU241024_t3907531058 * get_address_of_U24U24fieldU2D8_8() { return &___U24U24fieldU2D8_8; }
+	inline void set_U24U24fieldU2D8_8(U24ArrayTypeU241024_t3907531058  value)
 	{
-		___U24U24fieldU2D9_8 = value;
+		___U24U24fieldU2D8_8 = value;
 	}
 
-	inline static int32_t get_offset_of_U24U24fieldU2D10_9() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255364_StaticFields, ___U24U24fieldU2D10_9)); }
-	inline U24ArrayTypeU241024_t3907531058  get_U24U24fieldU2D10_9() const { return ___U24U24fieldU2D10_9; }
-	inline U24ArrayTypeU241024_t3907531058 * get_address_of_U24U24fieldU2D10_9() { return &___U24U24fieldU2D10_9; }
-	inline void set_U24U24fieldU2D10_9(U24ArrayTypeU241024_t3907531058  value)
+	inline static int32_t get_offset_of_U24U24fieldU2D9_9() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255364_StaticFields, ___U24U24fieldU2D9_9)); }
+	inline U24ArrayTypeU241024_t3907531058  get_U24U24fieldU2D9_9() const { return ___U24U24fieldU2D9_9; }
+	inline U24ArrayTypeU241024_t3907531058 * get_address_of_U24U24fieldU2D9_9() { return &___U24U24fieldU2D9_9; }
+	inline void set_U24U24fieldU2D9_9(U24ArrayTypeU241024_t3907531058  value)
 	{
-		___U24U24fieldU2D10_9 = value;
+		___U24U24fieldU2D9_9 = value;
 	}
 
-	inline static int32_t get_offset_of_U24U24fieldU2D11_10() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255364_StaticFields, ___U24U24fieldU2D11_10)); }
-	inline U24ArrayTypeU241024_t3907531058  get_U24U24fieldU2D11_10() const { return ___U24U24fieldU2D11_10; }
-	inline U24ArrayTypeU241024_t3907531058 * get_address_of_U24U24fieldU2D11_10() { return &___U24U24fieldU2D11_10; }
-	inline void set_U24U24fieldU2D11_10(U24ArrayTypeU241024_t3907531058  value)
+	inline static int32_t get_offset_of_U24U24fieldU2D10_10() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255364_StaticFields, ___U24U24fieldU2D10_10)); }
+	inline U24ArrayTypeU241024_t3907531058  get_U24U24fieldU2D10_10() const { return ___U24U24fieldU2D10_10; }
+	inline U24ArrayTypeU241024_t3907531058 * get_address_of_U24U24fieldU2D10_10() { return &___U24U24fieldU2D10_10; }
+	inline void set_U24U24fieldU2D10_10(U24ArrayTypeU241024_t3907531058  value)
 	{
-		___U24U24fieldU2D11_10 = value;
+		___U24U24fieldU2D10_10 = value;
+	}
+
+	inline static int32_t get_offset_of_U24U24fieldU2D11_11() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255364_StaticFields, ___U24U24fieldU2D11_11)); }
+	inline U24ArrayTypeU241024_t3907531058  get_U24U24fieldU2D11_11() const { return ___U24U24fieldU2D11_11; }
+	inline U24ArrayTypeU241024_t3907531058 * get_address_of_U24U24fieldU2D11_11() { return &___U24U24fieldU2D11_11; }
+	inline void set_U24U24fieldU2D11_11(U24ArrayTypeU241024_t3907531058  value)
+	{
+		___U24U24fieldU2D11_11 = value;
 	}
 };
 
@@ -2468,6 +2530,14 @@ extern "C" IL2CPP_METHOD_ATTR void RuntimeHelpers_InitializeArray_m3117905507 (R
 extern "C" IL2CPP_METHOD_ATTR void AesTransform_Encrypt128_m424393011 (AesTransform_t2957123611 * __this, ByteU5BU5D_t4116647657* ___indata0, ByteU5BU5D_t4116647657* ___outdata1, UInt32U5BU5D_t2770800703* ___ekey2, const RuntimeMethod* method);
 // System.Void System.Security.Cryptography.AesTransform::Decrypt128(System.Byte[],System.Byte[],System.UInt32[])
 extern "C" IL2CPP_METHOD_ATTR void AesTransform_Decrypt128_m3018534522 (AesTransform_t2957123611 * __this, ByteU5BU5D_t4116647657* ___indata0, ByteU5BU5D_t4116647657* ___outdata1, UInt32U5BU5D_t2770800703* ___ekey2, const RuntimeMethod* method);
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -4737,6 +4807,22 @@ IL_0022:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void System.MonoTODOAttribute::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void MonoTODOAttribute__ctor_m2619396706 (MonoTODOAttribute_t4131080583 * __this, const RuntimeMethod* method)
+{
+	{
+		Attribute__ctor_m1529526131(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 // System.Void System.Runtime.CompilerServices.ExtensionAttribute::.ctor()
 extern "C" IL2CPP_METHOD_ATTR void ExtensionAttribute__ctor_m1708143005 (ExtensionAttribute_t1723066603 * __this, const RuntimeMethod* method)
 {
@@ -5451,57 +5537,57 @@ extern "C" IL2CPP_METHOD_ATTR void AesTransform__cctor_m2567644034 (RuntimeObjec
 	{
 		UInt32U5BU5D_t2770800703* L_0 = (UInt32U5BU5D_t2770800703*)SZArrayNew(UInt32U5BU5D_t2770800703_il2cpp_TypeInfo_var, (uint32_t)((int32_t)30));
 		UInt32U5BU5D_t2770800703* L_1 = L_0;
-		RuntimeFieldHandle_t1871169219  L_2 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t3057255364____U24U24fieldU2D1_0_FieldInfo_var) };
+		RuntimeFieldHandle_t1871169219  L_2 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t3057255364____U24U24fieldU2D1_1_FieldInfo_var) };
 		RuntimeHelpers_InitializeArray_m3117905507(NULL /*static, unused*/, (RuntimeArray *)(RuntimeArray *)L_1, L_2, /*hidden argument*/NULL);
 		((AesTransform_t2957123611_StaticFields*)il2cpp_codegen_static_fields_for(AesTransform_t2957123611_il2cpp_TypeInfo_var))->set_Rcon_15(L_1);
 		ByteU5BU5D_t4116647657* L_3 = (ByteU5BU5D_t4116647657*)SZArrayNew(ByteU5BU5D_t4116647657_il2cpp_TypeInfo_var, (uint32_t)((int32_t)256));
 		ByteU5BU5D_t4116647657* L_4 = L_3;
-		RuntimeFieldHandle_t1871169219  L_5 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t3057255364____U24U24fieldU2D2_1_FieldInfo_var) };
+		RuntimeFieldHandle_t1871169219  L_5 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t3057255364____U24U24fieldU2D2_2_FieldInfo_var) };
 		RuntimeHelpers_InitializeArray_m3117905507(NULL /*static, unused*/, (RuntimeArray *)(RuntimeArray *)L_4, L_5, /*hidden argument*/NULL);
 		((AesTransform_t2957123611_StaticFields*)il2cpp_codegen_static_fields_for(AesTransform_t2957123611_il2cpp_TypeInfo_var))->set_SBox_16(L_4);
 		ByteU5BU5D_t4116647657* L_6 = (ByteU5BU5D_t4116647657*)SZArrayNew(ByteU5BU5D_t4116647657_il2cpp_TypeInfo_var, (uint32_t)((int32_t)256));
 		ByteU5BU5D_t4116647657* L_7 = L_6;
-		RuntimeFieldHandle_t1871169219  L_8 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t3057255364____U24U24fieldU2D3_2_FieldInfo_var) };
+		RuntimeFieldHandle_t1871169219  L_8 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t3057255364____U24U24fieldU2D3_3_FieldInfo_var) };
 		RuntimeHelpers_InitializeArray_m3117905507(NULL /*static, unused*/, (RuntimeArray *)(RuntimeArray *)L_7, L_8, /*hidden argument*/NULL);
 		((AesTransform_t2957123611_StaticFields*)il2cpp_codegen_static_fields_for(AesTransform_t2957123611_il2cpp_TypeInfo_var))->set_iSBox_17(L_7);
 		UInt32U5BU5D_t2770800703* L_9 = (UInt32U5BU5D_t2770800703*)SZArrayNew(UInt32U5BU5D_t2770800703_il2cpp_TypeInfo_var, (uint32_t)((int32_t)256));
 		UInt32U5BU5D_t2770800703* L_10 = L_9;
-		RuntimeFieldHandle_t1871169219  L_11 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t3057255364____U24U24fieldU2D4_3_FieldInfo_var) };
+		RuntimeFieldHandle_t1871169219  L_11 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t3057255364____U24U24fieldU2D4_4_FieldInfo_var) };
 		RuntimeHelpers_InitializeArray_m3117905507(NULL /*static, unused*/, (RuntimeArray *)(RuntimeArray *)L_10, L_11, /*hidden argument*/NULL);
 		((AesTransform_t2957123611_StaticFields*)il2cpp_codegen_static_fields_for(AesTransform_t2957123611_il2cpp_TypeInfo_var))->set_T0_18(L_10);
 		UInt32U5BU5D_t2770800703* L_12 = (UInt32U5BU5D_t2770800703*)SZArrayNew(UInt32U5BU5D_t2770800703_il2cpp_TypeInfo_var, (uint32_t)((int32_t)256));
 		UInt32U5BU5D_t2770800703* L_13 = L_12;
-		RuntimeFieldHandle_t1871169219  L_14 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t3057255364____U24U24fieldU2D5_4_FieldInfo_var) };
+		RuntimeFieldHandle_t1871169219  L_14 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t3057255364____U24U24fieldU2D5_5_FieldInfo_var) };
 		RuntimeHelpers_InitializeArray_m3117905507(NULL /*static, unused*/, (RuntimeArray *)(RuntimeArray *)L_13, L_14, /*hidden argument*/NULL);
 		((AesTransform_t2957123611_StaticFields*)il2cpp_codegen_static_fields_for(AesTransform_t2957123611_il2cpp_TypeInfo_var))->set_T1_19(L_13);
 		UInt32U5BU5D_t2770800703* L_15 = (UInt32U5BU5D_t2770800703*)SZArrayNew(UInt32U5BU5D_t2770800703_il2cpp_TypeInfo_var, (uint32_t)((int32_t)256));
 		UInt32U5BU5D_t2770800703* L_16 = L_15;
-		RuntimeFieldHandle_t1871169219  L_17 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t3057255364____U24U24fieldU2D6_5_FieldInfo_var) };
+		RuntimeFieldHandle_t1871169219  L_17 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t3057255364____U24U24fieldU2D6_6_FieldInfo_var) };
 		RuntimeHelpers_InitializeArray_m3117905507(NULL /*static, unused*/, (RuntimeArray *)(RuntimeArray *)L_16, L_17, /*hidden argument*/NULL);
 		((AesTransform_t2957123611_StaticFields*)il2cpp_codegen_static_fields_for(AesTransform_t2957123611_il2cpp_TypeInfo_var))->set_T2_20(L_16);
 		UInt32U5BU5D_t2770800703* L_18 = (UInt32U5BU5D_t2770800703*)SZArrayNew(UInt32U5BU5D_t2770800703_il2cpp_TypeInfo_var, (uint32_t)((int32_t)256));
 		UInt32U5BU5D_t2770800703* L_19 = L_18;
-		RuntimeFieldHandle_t1871169219  L_20 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t3057255364____U24U24fieldU2D7_6_FieldInfo_var) };
+		RuntimeFieldHandle_t1871169219  L_20 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t3057255364____U24U24fieldU2D7_7_FieldInfo_var) };
 		RuntimeHelpers_InitializeArray_m3117905507(NULL /*static, unused*/, (RuntimeArray *)(RuntimeArray *)L_19, L_20, /*hidden argument*/NULL);
 		((AesTransform_t2957123611_StaticFields*)il2cpp_codegen_static_fields_for(AesTransform_t2957123611_il2cpp_TypeInfo_var))->set_T3_21(L_19);
 		UInt32U5BU5D_t2770800703* L_21 = (UInt32U5BU5D_t2770800703*)SZArrayNew(UInt32U5BU5D_t2770800703_il2cpp_TypeInfo_var, (uint32_t)((int32_t)256));
 		UInt32U5BU5D_t2770800703* L_22 = L_21;
-		RuntimeFieldHandle_t1871169219  L_23 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t3057255364____U24U24fieldU2D8_7_FieldInfo_var) };
+		RuntimeFieldHandle_t1871169219  L_23 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t3057255364____U24U24fieldU2D8_8_FieldInfo_var) };
 		RuntimeHelpers_InitializeArray_m3117905507(NULL /*static, unused*/, (RuntimeArray *)(RuntimeArray *)L_22, L_23, /*hidden argument*/NULL);
 		((AesTransform_t2957123611_StaticFields*)il2cpp_codegen_static_fields_for(AesTransform_t2957123611_il2cpp_TypeInfo_var))->set_iT0_22(L_22);
 		UInt32U5BU5D_t2770800703* L_24 = (UInt32U5BU5D_t2770800703*)SZArrayNew(UInt32U5BU5D_t2770800703_il2cpp_TypeInfo_var, (uint32_t)((int32_t)256));
 		UInt32U5BU5D_t2770800703* L_25 = L_24;
-		RuntimeFieldHandle_t1871169219  L_26 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t3057255364____U24U24fieldU2D9_8_FieldInfo_var) };
+		RuntimeFieldHandle_t1871169219  L_26 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t3057255364____U24U24fieldU2D9_9_FieldInfo_var) };
 		RuntimeHelpers_InitializeArray_m3117905507(NULL /*static, unused*/, (RuntimeArray *)(RuntimeArray *)L_25, L_26, /*hidden argument*/NULL);
 		((AesTransform_t2957123611_StaticFields*)il2cpp_codegen_static_fields_for(AesTransform_t2957123611_il2cpp_TypeInfo_var))->set_iT1_23(L_25);
 		UInt32U5BU5D_t2770800703* L_27 = (UInt32U5BU5D_t2770800703*)SZArrayNew(UInt32U5BU5D_t2770800703_il2cpp_TypeInfo_var, (uint32_t)((int32_t)256));
 		UInt32U5BU5D_t2770800703* L_28 = L_27;
-		RuntimeFieldHandle_t1871169219  L_29 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t3057255364____U24U24fieldU2D10_9_FieldInfo_var) };
+		RuntimeFieldHandle_t1871169219  L_29 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t3057255364____U24U24fieldU2D10_10_FieldInfo_var) };
 		RuntimeHelpers_InitializeArray_m3117905507(NULL /*static, unused*/, (RuntimeArray *)(RuntimeArray *)L_28, L_29, /*hidden argument*/NULL);
 		((AesTransform_t2957123611_StaticFields*)il2cpp_codegen_static_fields_for(AesTransform_t2957123611_il2cpp_TypeInfo_var))->set_iT2_24(L_28);
 		UInt32U5BU5D_t2770800703* L_30 = (UInt32U5BU5D_t2770800703*)SZArrayNew(UInt32U5BU5D_t2770800703_il2cpp_TypeInfo_var, (uint32_t)((int32_t)256));
 		UInt32U5BU5D_t2770800703* L_31 = L_30;
-		RuntimeFieldHandle_t1871169219  L_32 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t3057255364____U24U24fieldU2D11_10_FieldInfo_var) };
+		RuntimeFieldHandle_t1871169219  L_32 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t3057255364____U24U24fieldU2D11_11_FieldInfo_var) };
 		RuntimeHelpers_InitializeArray_m3117905507(NULL /*static, unused*/, (RuntimeArray *)(RuntimeArray *)L_31, L_32, /*hidden argument*/NULL);
 		((AesTransform_t2957123611_StaticFields*)il2cpp_codegen_static_fields_for(AesTransform_t2957123611_il2cpp_TypeInfo_var))->set_iT3_25(L_31);
 		return;

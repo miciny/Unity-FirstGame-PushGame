@@ -44,6 +44,8 @@ struct StringU5BU5D_t1281789340;
 struct AssetFileNameExtensionAttribute_t1361241164;
 // UnityEngine.Bindings.FreeFunctionAttribute
 struct FreeFunctionAttribute_t2020741617;
+// UnityEngine.Bindings.IgnoreAttribute
+struct IgnoreAttribute_t1982719709;
 // UnityEngine.Bindings.NativeConditionalAttribute
 struct NativeConditionalAttribute_t2439539374;
 // UnityEngine.Bindings.NativeHeaderAttribute
@@ -614,6 +616,35 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // ASSETFILENAMEEXTENSIONATTRIBUTE_T1361241164_H
+#ifndef IGNOREATTRIBUTE_T1982719709_H
+#define IGNOREATTRIBUTE_T1982719709_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UnityEngine.Bindings.IgnoreAttribute
+struct  IgnoreAttribute_t1982719709  : public Attribute_t861562559
+{
+public:
+	// System.Boolean UnityEngine.Bindings.IgnoreAttribute::<DoesNotContributeToSize>k__BackingField
+	bool ___U3CDoesNotContributeToSizeU3Ek__BackingField_0;
+
+public:
+	inline static int32_t get_offset_of_U3CDoesNotContributeToSizeU3Ek__BackingField_0() { return static_cast<int32_t>(offsetof(IgnoreAttribute_t1982719709, ___U3CDoesNotContributeToSizeU3Ek__BackingField_0)); }
+	inline bool get_U3CDoesNotContributeToSizeU3Ek__BackingField_0() const { return ___U3CDoesNotContributeToSizeU3Ek__BackingField_0; }
+	inline bool* get_address_of_U3CDoesNotContributeToSizeU3Ek__BackingField_0() { return &___U3CDoesNotContributeToSizeU3Ek__BackingField_0; }
+	inline void set_U3CDoesNotContributeToSizeU3Ek__BackingField_0(bool value)
+	{
+		___U3CDoesNotContributeToSizeU3Ek__BackingField_0 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // IGNOREATTRIBUTE_T1982719709_H
 #ifndef NATIVECONDITIONALATTRIBUTE_T2439539374_H
 #define NATIVECONDITIONALATTRIBUTE_T2439539374_H
 #ifdef __clang__
@@ -1578,6 +1609,31 @@ extern "C" IL2CPP_METHOD_ATTR void FreeFunctionAttribute__ctor_m1198537781 (Free
 		String_t* L_0 = ___name0;
 		bool L_1 = ___isThreadSafe1;
 		NativeMethodAttribute__ctor_m2749818278(__this, L_0, (bool)1, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void UnityEngine.Bindings.IgnoreAttribute::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void IgnoreAttribute__ctor_m3428881723 (IgnoreAttribute_t1982719709 * __this, const RuntimeMethod* method)
+{
+	{
+		Attribute__ctor_m1529526131(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.Bindings.IgnoreAttribute::set_DoesNotContributeToSize(System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void IgnoreAttribute_set_DoesNotContributeToSize_m1674813355 (IgnoreAttribute_t1982719709 * __this, bool ___value0, const RuntimeMethod* method)
+{
+	{
+		bool L_0 = ___value0;
+		__this->set_U3CDoesNotContributeToSizeU3Ek__BackingField_0(L_0);
 		return;
 	}
 }

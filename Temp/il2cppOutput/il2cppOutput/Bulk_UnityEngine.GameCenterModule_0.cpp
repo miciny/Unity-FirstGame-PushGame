@@ -195,7 +195,7 @@ extern String_t* _stringLiteral757602046;
 extern String_t* _stringLiteral930699636;
 extern String_t* _stringLiteral933325165;
 extern const RuntimeMethod* Action_1_Invoke_m1224910097_RuntimeMethod_var;
-extern const RuntimeMethod* Action_1_Invoke_m1892723854_RuntimeMethod_var;
+extern const RuntimeMethod* Action_1_Invoke_m1933767679_RuntimeMethod_var;
 extern const RuntimeMethod* Action_1_Invoke_m1979208465_RuntimeMethod_var;
 extern const RuntimeMethod* Action_1_Invoke_m24007936_RuntimeMethod_var;
 extern const RuntimeMethod* Action_1_Invoke_m288031925_RuntimeMethod_var;
@@ -1157,15 +1157,15 @@ struct  UInt32_t2560061978
 {
 public:
 	// System.UInt32 System.UInt32::m_value
-	uint32_t ___m_value_0;
+	uint32_t ___m_value_2;
 
 public:
-	inline static int32_t get_offset_of_m_value_0() { return static_cast<int32_t>(offsetof(UInt32_t2560061978, ___m_value_0)); }
-	inline uint32_t get_m_value_0() const { return ___m_value_0; }
-	inline uint32_t* get_address_of_m_value_0() { return &___m_value_0; }
-	inline void set_m_value_0(uint32_t value)
+	inline static int32_t get_offset_of_m_value_2() { return static_cast<int32_t>(offsetof(UInt32_t2560061978, ___m_value_2)); }
+	inline uint32_t get_m_value_2() const { return ___m_value_2; }
+	inline uint32_t* get_address_of_m_value_2() { return &___m_value_2; }
+	inline void set_m_value_2(uint32_t value)
 	{
-		___m_value_0 = value;
+		___m_value_2 = value;
 	}
 };
 
@@ -3195,7 +3195,7 @@ extern "C" IL2CPP_METHOD_ATTR void Action_1_Invoke_m2461023210_gshared (Action_1
 // System.Void System.Action`2<System.Boolean,System.Object>::Invoke(!0,!1)
 extern "C" IL2CPP_METHOD_ATTR void Action_2_Invoke_m1763453775_gshared (Action_2_t2523487705 * __this, bool p0, RuntimeObject * p1, const RuntimeMethod* method);
 // System.Void System.Action`1<System.Boolean>::Invoke(!0)
-extern "C" IL2CPP_METHOD_ATTR void Action_1_Invoke_m1892723854_gshared (Action_1_t269755560 * __this, bool p0, const RuntimeMethod* method);
+extern "C" IL2CPP_METHOD_ATTR void Action_1_Invoke_m1933767679_gshared (Action_1_t269755560 * __this, bool p0, const RuntimeMethod* method);
 // System.Void System.Action`2<System.Boolean,System.Object>::.ctor(System.Object,System.IntPtr)
 extern "C" IL2CPP_METHOD_ATTR void Action_2__ctor_m1520833393_gshared (Action_2_t2523487705 * __this, RuntimeObject * p0, intptr_t p1, const RuntimeMethod* method);
 // System.Void System.Collections.Generic.List`1<System.Object>::Add(!0)
@@ -3240,9 +3240,9 @@ extern "C" IL2CPP_METHOD_ATTR void GameCenterPlatform_SafeSetUserImage_m18391978
 // System.Void UnityEngine.SocialPlatforms.Impl.LocalUser::SetFriends(UnityEngine.SocialPlatforms.IUserProfile[])
 extern "C" IL2CPP_METHOD_ATTR void LocalUser_SetFriends_m298063769 (LocalUser_t365094499 * __this, IUserProfileU5BU5D_t909679733* ___friends0, const RuntimeMethod* method);
 // System.Void System.Action`1<System.Boolean>::Invoke(!0)
-inline void Action_1_Invoke_m1892723854 (Action_1_t269755560 * __this, bool p0, const RuntimeMethod* method)
+inline void Action_1_Invoke_m1933767679 (Action_1_t269755560 * __this, bool p0, const RuntimeMethod* method)
 {
-	((  void (*) (Action_1_t269755560 *, bool, const RuntimeMethod*))Action_1_Invoke_m1892723854_gshared)(__this, p0, method);
+	((  void (*) (Action_1_t269755560 *, bool, const RuntimeMethod*))Action_1_Invoke_m1933767679_gshared)(__this, p0, method);
 }
 // UnityEngine.SocialPlatforms.Impl.Achievement UnityEngine.SocialPlatforms.GameCenter.GcAchievementData::ToAchievement()
 extern "C" IL2CPP_METHOD_ATTR Achievement_t565359984 * GcAchievementData_ToAchievement_m891470019 (GcAchievementData_t675222246 * __this, const RuntimeMethod* method);
@@ -3830,7 +3830,7 @@ IL_002e:
 IL_002f:
 	{
 		NullCheck(G_B6_1);
-		Action_1_Invoke_m1892723854(G_B6_1, (bool)G_B6_0, /*hidden argument*/Action_1_Invoke_m1892723854_RuntimeMethod_var);
+		Action_1_Invoke_m1933767679(G_B6_1, (bool)G_B6_0, /*hidden argument*/Action_1_Invoke_m1933767679_RuntimeMethod_var);
 	}
 
 IL_0034:
@@ -3936,7 +3936,7 @@ extern "C" IL2CPP_METHOD_ATTR void GameCenterPlatform_ProgressCallbackWrapper_m3
 		Action_1_t269755560 * L_1 = ___callback0;
 		bool L_2 = ___success1;
 		NullCheck(L_1);
-		Action_1_Invoke_m1892723854(L_1, L_2, /*hidden argument*/Action_1_Invoke_m1892723854_RuntimeMethod_var);
+		Action_1_Invoke_m1933767679(L_1, L_2, /*hidden argument*/Action_1_Invoke_m1933767679_RuntimeMethod_var);
 	}
 
 IL_000e:
@@ -3964,7 +3964,7 @@ extern "C" IL2CPP_METHOD_ATTR void GameCenterPlatform_ScoreCallbackWrapper_m3923
 		Action_1_t269755560 * L_1 = ___callback0;
 		bool L_2 = ___success1;
 		NullCheck(L_1);
-		Action_1_Invoke_m1892723854(L_1, L_2, /*hidden argument*/Action_1_Invoke_m1892723854_RuntimeMethod_var);
+		Action_1_Invoke_m1933767679(L_1, L_2, /*hidden argument*/Action_1_Invoke_m1933767679_RuntimeMethod_var);
 	}
 
 IL_000e:
@@ -4062,7 +4062,7 @@ extern "C" IL2CPP_METHOD_ATTR void GameCenterPlatform_UnityEngine_SocialPlatform
 	{
 		Action_1_t269755560 * L_2 = ___callback1;
 		NullCheck(L_2);
-		Action_1_Invoke_m1892723854(L_2, (bool)0, /*hidden argument*/Action_1_Invoke_m1892723854_RuntimeMethod_var);
+		Action_1_Invoke_m1933767679(L_2, (bool)0, /*hidden argument*/Action_1_Invoke_m1933767679_RuntimeMethod_var);
 	}
 
 IL_001a:
@@ -4298,7 +4298,7 @@ extern "C" IL2CPP_METHOD_ATTR void GameCenterPlatform_ReportProgress_m1060252293
 	{
 		Action_1_t269755560 * L_2 = ___callback2;
 		NullCheck(L_2);
-		Action_1_Invoke_m1892723854(L_2, (bool)0, /*hidden argument*/Action_1_Invoke_m1892723854_RuntimeMethod_var);
+		Action_1_Invoke_m1933767679(L_2, (bool)0, /*hidden argument*/Action_1_Invoke_m1933767679_RuntimeMethod_var);
 	}
 
 IL_001a:
@@ -4393,7 +4393,7 @@ extern "C" IL2CPP_METHOD_ATTR void GameCenterPlatform_ReportScore_m3808549820 (G
 	{
 		Action_1_t269755560 * L_2 = ___callback2;
 		NullCheck(L_2);
-		Action_1_Invoke_m1892723854(L_2, (bool)0, /*hidden argument*/Action_1_Invoke_m1892723854_RuntimeMethod_var);
+		Action_1_Invoke_m1933767679(L_2, (bool)0, /*hidden argument*/Action_1_Invoke_m1933767679_RuntimeMethod_var);
 	}
 
 IL_001a:
@@ -4496,7 +4496,7 @@ extern "C" IL2CPP_METHOD_ATTR void GameCenterPlatform_LoadScores_m256327074 (Gam
 	{
 		Action_1_t269755560 * L_2 = ___callback1;
 		NullCheck(L_2);
-		Action_1_Invoke_m1892723854(L_2, (bool)0, /*hidden argument*/Action_1_Invoke_m1892723854_RuntimeMethod_var);
+		Action_1_Invoke_m1933767679(L_2, (bool)0, /*hidden argument*/Action_1_Invoke_m1933767679_RuntimeMethod_var);
 	}
 
 IL_001a:
@@ -4585,7 +4585,7 @@ extern "C" IL2CPP_METHOD_ATTR void GameCenterPlatform_LeaderboardCallbackWrapper
 		Action_1_t269755560 * L_1 = ___callback0;
 		bool L_2 = ___success1;
 		NullCheck(L_1);
-		Action_1_Invoke_m1892723854(L_1, L_2, /*hidden argument*/Action_1_Invoke_m1892723854_RuntimeMethod_var);
+		Action_1_Invoke_m1933767679(L_1, L_2, /*hidden argument*/Action_1_Invoke_m1933767679_RuntimeMethod_var);
 	}
 
 IL_000e:
@@ -5131,7 +5131,7 @@ extern "C" IL2CPP_METHOD_ATTR void GameCenterPlatform_TriggerResetAchievementCal
 		Action_1_t269755560 * L_1 = ((GameCenterPlatform_t2679391364_StaticFields*)il2cpp_codegen_static_fields_for(GameCenterPlatform_t2679391364_il2cpp_TypeInfo_var))->get_s_ResetAchievements_4();
 		bool L_2 = ___result0;
 		NullCheck(L_1);
-		Action_1_Invoke_m1892723854(L_1, L_2, /*hidden argument*/Action_1_Invoke_m1892723854_RuntimeMethod_var);
+		Action_1_Invoke_m1933767679(L_1, L_2, /*hidden argument*/Action_1_Invoke_m1933767679_RuntimeMethod_var);
 	}
 
 IL_0016:
@@ -5407,7 +5407,7 @@ extern "C" IL2CPP_METHOD_ATTR void U3CUnityEngine_SocialPlatforms_ISocialPlatfor
 		Action_1_t269755560 * L_0 = __this->get_callback_0();
 		bool L_1 = ___success0;
 		NullCheck(L_0);
-		Action_1_Invoke_m1892723854(L_0, L_1, /*hidden argument*/Action_1_Invoke_m1892723854_RuntimeMethod_var);
+		Action_1_Invoke_m1933767679(L_0, L_1, /*hidden argument*/Action_1_Invoke_m1933767679_RuntimeMethod_var);
 		return;
 	}
 }

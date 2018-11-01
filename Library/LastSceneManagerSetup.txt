@@ -1,4 +1,10 @@
 sceneSetups:
-- path: Assets/Scenes/FirstLevel.unity
+- path: Assets/Scenes/Push.unity
+  isLoaded: 0
+  isActive: 0
+- path: Assets/Scenes/Kill.unity
+  isLoaded: 0
+  isActive: 0
+- path: Assets/Scenes/Test.unity
   isLoaded: 1
   isActive: 1
