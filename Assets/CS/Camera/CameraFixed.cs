@@ -16,7 +16,7 @@ public class CameraFixed : MonoBehaviour
     readonly float rotateSmoothing = 0.5f;//旋转速度
     readonly float moveBounds = 100f;
     readonly bool useMoveBounds = true;
-    readonly float phiBoundMin = 10f; //最大最小角度
+    readonly float phiBoundMin; //最大最小角度
     readonly float phiBoundMax = 89f;
     readonly float moveSpeed = 10.0f;
     readonly float zoomSpeed = 10.0f;
@@ -66,7 +66,7 @@ public class CameraFixed : MonoBehaviour
             GameObject canvas = GameObject.Find("Canvas");
             if (canvas != null)//面板存在就判断
             {
-                if (Map.IsPointerOverUIObject(Input.GetTouch(0).position))
+                if (CommonFuncs.IsPointerOverUIObject(Input.GetTouch(0).position))
                 {
                     print("当前触摸在UI上"); return;
                 }
@@ -82,7 +82,7 @@ public class CameraFixed : MonoBehaviour
                     Vector3 tempPosition1 = Input.GetTouch(0).position;
                     Vector3 tempPosition2 = Input.GetTouch(1).position;
                     //函数返回float<0.放大
-                    float zoom = Map.IsEnlarge(oldPosition1, oldPosition2, tempPosition1, tempPosition2);
+                    float zoom = CommonFuncs.IsEnlarge(oldPosition1, oldPosition2, tempPosition1, tempPosition2);
                     if (zoom < 0) { targetDist -= 0.2f * zoomSpeed; } else { targetDist += 0.2f * zoomSpeed; }
                   
                     //备份上一次触摸点的位置，用于对比
@@ -146,7 +146,7 @@ public class CameraFixed : MonoBehaviour
         dy = dy * phiSpeed * 0.02f;
         euler.x += dx;
         euler.y -= dy;
-        euler.y = Map.ClampAngle(euler.y, phiBoundMin, phiBoundMax);
+        euler.y = CommonFuncs.ClampAngle(euler.y, phiBoundMin, phiBoundMax);
         targetRot = Quaternion.Euler(euler.y, euler.x, 0);
     }
 

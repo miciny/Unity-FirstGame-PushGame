@@ -1,10 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Push.unity
-  isLoaded: 0
-  isActive: 0
-- path: Assets/Scenes/Kill.unity
-  isLoaded: 0
-  isActive: 0
-- path: Assets/Scenes/Test.unity
+- path: Assets/Scenes/Fight/Fight_Level_1.unity
   isLoaded: 1
   isActive: 1

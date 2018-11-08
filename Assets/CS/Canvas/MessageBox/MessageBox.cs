@@ -14,7 +14,7 @@ namespace Common
         public static void Show(string content)
         {
             ContentStr = "    " + content;
-            Messagebox = (GameObject)Resources.Load("Prefab/Background");
+            Messagebox = (GameObject)Resources.Load("Prefab/CanvasPerfab/Background");
             Messagebox = Instantiate(Messagebox, GameObject.Find("Canvas").transform);
             Messagebox.transform.localScale = new Vector3(1, 1, 1);
             Messagebox.GetComponent<RectTransform>().anchoredPosition = Vector3.zero;
@@ -27,7 +27,7 @@ namespace Common
         {
             TitleStr = title;
             ContentStr = "    " + content;
-            Messagebox = (GameObject)Resources.Load("Prefab/Background");
+            Messagebox = (GameObject)Resources.Load("Prefab/CanvasPerfab/Background");
             Messagebox = Instantiate(Messagebox, GameObject.Find("Canvas").transform);
             Messagebox.transform.localScale = new Vector3(1, 1, 1);
             Messagebox.GetComponent<RectTransform>().anchoredPosition = Vector3.zero;

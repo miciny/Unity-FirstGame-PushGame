@@ -6,9 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Push.unity
+    path: Assets/Scenes/MainCity.unity
+    guid: 81ea6ff5dc576415eb9bacc510f5aa26
+  - enabled: 1
+    path: Assets/Scenes/Push/Push.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/Scenes/Kill.unity
-    guid: 81ea6ff5dc576415eb9bacc510f5aa26
+    path: Assets/Scenes/Loading.unity
+    guid: efd7246c2f8704447b4170b41e4374f3
+  - enabled: 1
+    path: Assets/Scenes/Fight/Fight_Level_1.unity
+    guid: 272d68538b1cd48478043c2494181148
   m_configObjects: {}

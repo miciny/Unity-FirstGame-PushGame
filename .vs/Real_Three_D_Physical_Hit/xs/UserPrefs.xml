@@ -1,10 +1,13 @@
 ﻿<Properties StartupConfiguration="{7365BEF6-C7D1-C21E-C444-CBA034D2DDCE}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/CS/Kill/CreateKillScene.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/CS/Gebulin/GebulinData.cs">
     <Files>
-      <File FileName="Assets/CS/Kill/CreateKillScene.cs" Line="159" Column="63" />
-      <File FileName="Assets/CS/Kill/BaolongAction.cs" Line="125" Column="20" />
-      <File FileName="Assets/CS/Push/Map.cs" Line="146" Column="5" />
+      <File FileName="Assets/CS/Scenes/Fight/CreateFightSences.cs" Line="54" Column="33" />
+      <File FileName="Assets/CS/Canvas/HP/ControlHP.cs" Line="34" Column="33" />
+      <File FileName="Assets/CS/Heros/Modao.cs" Line="126" Column="53" />
+      <File FileName="Assets/CS/Gebulin/Gebulin.cs" Line="9" Column="3" />
+      <File FileName="Assets/CS/Gebulin/GebulinData.cs" Line="1" Column="1" />
+      <File FileName="Assets/CS/HerosData/ModaoData.cs" Line="7" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
