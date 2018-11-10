@@ -22,7 +22,7 @@ public class BaolongAction : MonoBehaviour {
     void Start (){
         playerRb = GetComponent<Rigidbody>(); 
         baolong_animation = GetComponent<Animation>(); //动画控制器
-        baolong_animation.PlayQueued("Wait", QueueMode.PlayNow);//上来直接播放
+        baolong_animation.PlayQueued("idle", QueueMode.PlayNow);//上来直接播放
 
         targetDir = new Vector3(0, 0, 0);
         targetRotation = Quaternion.Euler(targetDir);
@@ -100,7 +100,7 @@ public class BaolongAction : MonoBehaviour {
             if(dragFlag || keyFlag){
                 baolong_animation.PlayQueued("Walk", QueueMode.PlayNow);
             }else{
-                baolong_animation.PlayQueued("Wait", QueueMode.PlayNow);
+                baolong_animation.PlayQueued("idle", QueueMode.PlayNow);
             }
         }, 1.23f));
     }
@@ -108,9 +108,11 @@ public class BaolongAction : MonoBehaviour {
     //加速
     void Accelerate(){
         moveRate = moveRate * 3;
+        baolong_animation.PlayQueued("Run", QueueMode.PlayNow);
     }
     void AccelerateEnd(){
         moveRate = moveRate / 3;
+        baolong_animation.PlayQueued("Walk", QueueMode.PlayNow);
     }
 
     //攻击
@@ -121,7 +123,7 @@ public class BaolongAction : MonoBehaviour {
             if (dragFlag || keyFlag){
                 baolong_animation.PlayQueued("Walk", QueueMode.CompleteOthers);
             }else{
-                baolong_animation.PlayQueued("Wait", QueueMode.CompleteOthers);
+                baolong_animation.PlayQueued("idle", QueueMode.CompleteOthers);
             }
         }
     }
@@ -155,7 +157,7 @@ public class BaolongAction : MonoBehaviour {
         moveFlag = false;
         if (!jumpFlag){ //在地下，变成0，在控制，速度不变，
             playerRb.velocity = Vector3.zero;
-            baolong_animation.PlayQueued("Wait", QueueMode.PlayNow);
+            baolong_animation.PlayQueued("idle", QueueMode.PlayNow);
         }
     }
 

@@ -65,10 +65,10 @@
     <Compile Include="Assets\CS\Camera\CameraFixed.cs" />
     <Compile Include="Assets\CS\Camera\CameraFollow.cs" />
     <Compile Include="Assets\CS\CommonFuncs.cs" />
-    <Compile Include="Assets\CS\Gebulin\Gebulin.cs" />
-    <Compile Include="Assets\CS\Gebulin\GebulinData.cs" />
     <Compile Include="Assets\CS\Heros\Modao.cs" />
     <Compile Include="Assets\CS\Heros\ModaoData.cs" />
+    <Compile Include="Assets\CS\Manster\Gebulin\Gebulin.cs" />
+    <Compile Include="Assets\CS\Manster\Gebulin\GebulinData.cs" />
     <Compile Include="Assets\CS\Package\ItemModel.cs" />
     <Compile Include="Assets\CS\Package\PackageData.cs" />
     <Compile Include="Assets\CS\Scenes\Canvas\Button\UIButton.cs" />
@@ -94,17 +94,17 @@
     <Compile Include="Assets\ShaderForge\Example Assets\Scripts\EditorLabel.cs" />
     <Compile Include="Assets\ShaderForge\Example Assets\Scripts\EnableCameraDepthInForward.cs" />
     <Compile Include="Assets\ShaderForge\Example Assets\Scripts\SoftNormalsToVertexColor.cs" />
-    <None Include="Assets\Matter\Player\CharacterBRDF.shader" />
     <None Include="Assets\ShaderForge\Readme.txt" />
     <None Include="Assets\Resources\Shader\Push\StoneShader.shader" />
-    <None Include="Assets\Matter\Player\Mobile-VertexLit.shader" />
     <None Include="Assets\ShaderForge\Example Assets\Shaders\Vegetation.shader" />
+    <None Include="Assets\Resources\Prefab\Manster\PB_Spider\readme.txt" />
     <None Include="Assets\ShaderForge\Example Assets\Shaders\VertexAnimation.shader" />
     <None Include="Assets\Resources\Shader\Push\BoxOnAim.shader" />
     <None Include="Assets\ShaderForge\Example Assets\Shaders\Refraction.shader" />
+    <None Include="Assets\Resources\Prefab\Manster\Gebulin\CharacterBRDF.shader" />
     <None Include="Assets\ShaderForge\Example Assets\Shaders\Parallax.shader" />
     <None Include="Assets\ShaderForge\Example Assets\Shaders\LightWrapping.shader" />
-    <None Include="Assets\Matter\Player\Mobile-Diffuse.shader" />
+    <None Include="Assets\Resources\Prefab\Manster\Gebulin\Mobile-VertexLit.shader" />
     <None Include="Assets\ShaderForge\Example Assets\Shaders\VertexColorRounding.shader" />
     <None Include="Assets\ShaderForge\Example Assets\Shaders\TessellationDisplacement.shader" />
     <None Include="Assets\ShaderForge\Example Assets\Shaders\Tiles.shader" />
@@ -112,6 +112,7 @@
     <None Include="Assets\Resources\Shader\Push\Box.shader" />
     <None Include="Assets\ShaderForge\Example Assets\Shaders\PixelRotator.shader" />
     <None Include="Assets\ShaderForge\Example Assets\Shaders\CustomLighting.shader" />
+    <None Include="Assets\Resources\Prefab\Manster\Gebulin\Mobile-Diffuse.shader" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/miciny/ToGitHub/Real_Three_D_Physical_Hit/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

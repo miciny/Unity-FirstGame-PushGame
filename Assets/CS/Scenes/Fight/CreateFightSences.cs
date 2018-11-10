@@ -79,7 +79,7 @@ public class CreateFightSences : MonoBehaviour{
     //创建哥布林
     void CreateGebulin(){
         for (int i = 0; i < 5; i++){
-            GameObject gebulin1 = (GameObject)Resources.Load("Prefab/Gebulin/Npc_Gebulin_01");
+            GameObject gebulin1 = (GameObject)Resources.Load("Prefab/Manster/Gebulin/Npc_Gebulin_1");
             gebulin1 = Instantiate(gebulin1);
             gebulin1.transform.position = new Vector3(-7, 0, -9 + i*4);
             gebulin1.tag = "Gubulin_01";
@@ -95,7 +95,7 @@ public class CreateFightSences : MonoBehaviour{
             bloodShow.GetComponent<ControlHP>().maxHP = int.Parse(GShuxing["bloodStr"]);
         }
         for (int i = 0; i < 5; i++){
-            GameObject gebulin2 = (GameObject)Resources.Load("Prefab/Gebulin/Npc_Gebulin_02");
+            GameObject gebulin2 = (GameObject)Resources.Load("Prefab/Manster/Gebulin/Npc_Gebulin_2");
             gebulin2 = Instantiate(gebulin2);
             gebulin2.transform.position = new Vector3(-7 + i * 4, 0, -9);
             gebulin2.tag = "Gubulin_02";

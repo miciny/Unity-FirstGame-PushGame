@@ -162,7 +162,7 @@ public class CreatePushScene : MonoBehaviour{
     //创建一个自己的模型=   Player
     void CreateThePlayer(int i, int j)
     {
-        GameObject go = (GameObject)Resources.Load("Prefab/Heros/Baolong");
+        GameObject go = (GameObject)Resources.Load("Prefab/Heros/Baolong/Baolong");
         go = Instantiate(go);
         go.name = "Player";
         go.transform.parent = AllParentGo.transform;

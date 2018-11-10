@@ -10,16 +10,13 @@ public class CreateMainCityScene : MonoBehaviour{
 
     // Use this for initialization
     void Start () {
-        AllParentGo = new GameObject
-        {
+        AllParentGo = new GameObject{
             name = "FatherOfAll"
         };
 
         sceneName = SceneManager.GetActiveScene().name;
         int index = SceneManager.GetActiveScene().buildIndex; //0开始
         print("加载场景：" + sceneName + "，编号为：" + index);
-
-        GameObject.Find("Main Camera").AddComponent<CameraFollow>();
 
         CreateThePlayer();
         CreateYaogan();
@@ -53,10 +50,9 @@ public class CreateMainCityScene : MonoBehaviour{
     //创建一个自己的模型=   Player
     void CreateThePlayer()
     {
-        GameObject go = (GameObject)Resources.Load("Prefab/Heros/Baolong");
-        go = Instantiate(go);
-        go.name = "Baolong";
-        go.transform.parent = AllParentGo.transform;
+        GameObject go = (GameObject)Resources.Load("Prefab/Heros/Red Samurai/samuzai");
+        go = Instantiate(go, AllParentGo.transform);
+        go.name = "Player";
 
         go.transform.position = new Vector3(0, 6f, 0);
         go.transform.localEulerAngles = new Vector3(0, 0, 0);
@@ -144,7 +140,7 @@ public class CreateMainCityScene : MonoBehaviour{
         btnJump.GetComponent<UIButton>().SetTitle("跳");
         btnJump.GetComponent<UIButton>().clickAction = () =>
         {
-            GameObject.Find("Baolong").SendMessage("Jump", SendMessageOptions.DontRequireReceiver);
+            GameObject.Find("Player").SendMessage("Jump", SendMessageOptions.DontRequireReceiver);
         };
 
         //加速
@@ -156,11 +152,11 @@ public class CreateMainCityScene : MonoBehaviour{
         btnAcc.GetComponent<UIButton>().SetTitle("加速");
         btnAcc.GetComponent<UIButton>().clickAction = () =>
         {
-            GameObject.Find("Baolong").SendMessage("Accelerate", SendMessageOptions.DontRequireReceiver);
+            GameObject.Find("Player").SendMessage("Accelerate", SendMessageOptions.DontRequireReceiver);
         };
         btnAcc.GetComponent<UIButton>().upAction = () =>
         {
-            GameObject.Find("Baolong").SendMessage("AccelerateEnd", SendMessageOptions.DontRequireReceiver);
+            GameObject.Find("Player").SendMessage("AccelerateEnd", SendMessageOptions.DontRequireReceiver);
         };
 
         //攻击
@@ -172,7 +168,7 @@ public class CreateMainCityScene : MonoBehaviour{
         btnAttack.GetComponent<UIButton>().SetTitle("攻击");
         btnAttack.GetComponent<UIButton>().clickAction = () =>
         {
-            GameObject.Find("Baolong").SendMessage("AttackMove", SendMessageOptions.DontRequireReceiver);
+            GameObject.Find("Player").SendMessage("AttackMove", SendMessageOptions.DontRequireReceiver);
         };
     }
 
