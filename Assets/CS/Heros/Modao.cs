@@ -3,20 +3,23 @@ using UnityEngine;
 
 public class Modao : MonoBehaviour {
 
-    ParticleSystem[] particleSystems;
-    ParticleSystem lightParticle;
+    ParticleSystem[] particleSystems; //粒子系统
+    ParticleSystem lightParticle; //粒子系统
 
     Rigidbody Player;
 
     bool moveFlag = false;
     Vector3 targetDir; //运动的转向
     Quaternion targetRotation;
-    float oriAngleY;
+    float oriAngleY; //
 
     readonly float moveRate = 10f;
     readonly float rotationSpeed = 40f;
     string level;
     Dictionary<string, string> Shuxing;
+
+    readonly float w = Screen.width; //
+    readonly float h = Screen.height;
 
     // Use this for initialization
     void Start () {
@@ -75,8 +78,7 @@ public class Modao : MonoBehaviour {
         Player.rotation = Quaternion.RotateTowards(Player.rotation, targetRotation, Time.time * rotationSpeed);
     }
 
-    void FixedUpdate()
-    {
+    void FixedUpdate(){
         //移动，直接给速度
         if (moveFlag){
             Vector3 moveVelocity = Player.transform.forward * moveRate;
@@ -85,7 +87,7 @@ public class Modao : MonoBehaviour {
         }
     }
 
-    //按键的动作
+    //======================移动=====================
     void PlayerMove(int d){
         BeginMove();
         oriAngleY = CommonFuncs.GetMainCamera().transform.eulerAngles.y;
@@ -107,12 +109,47 @@ public class Modao : MonoBehaviour {
         targetRotation = Quaternion.Euler(targetDir);
     }
 
-
-    void AttackMove(){
-        lightParticle.Play();
-        Attacked(1000);
+    //开始，结束时的处理
+    void BeginMove()
+    {
+        moveFlag = true;
+        HideShuxingMianban();
     }
 
+    void EndMove()
+    {
+        moveFlag = false;
+        Player.velocity = Vector3.zero;
+    }
+
+    //遥感的代理
+    //传入 Horizontal Vertical，改变方向
+    void OnDrag(Vector2 hv)
+    {
+        float y = Quaternion.LookRotation(new Vector3(hv.x, 0, hv.y)).eulerAngles.y;
+        oriAngleY = CommonFuncs.GetMainCamera().transform.eulerAngles.y;
+        targetDir = new Vector3(0, oriAngleY + y, 0); //朝向
+        targetRotation = Quaternion.Euler(targetDir);
+    }
+
+    //开始拖拽
+    void BeginDrag()
+    {
+        BeginMove();
+    }
+
+    void EndDrag()
+    {
+        EndMove();
+    }
+
+
+    //======================攻击与被攻击=====================
+    void AttackMove(){
+        lightParticle.Play();
+    }
+
+    //被攻击
     void Attacked(int damage){
         foreach (Transform can in transform){
             if (can.gameObject.name == "Canvas_Show(Clone)"){
@@ -121,43 +158,15 @@ public class Modao : MonoBehaviour {
             }
         }
 
-        GameObject pla = GameObject.Find("PlayerInfo");
+        GameObject pla = GameObject.Find("PlayerInfo(Clone)");
         if(pla){
             pla.GetComponent<PlayerInfo>().Reload();
         }
     }
 
-    //开始，结束时的处理
-    void BeginMove(){
-        moveFlag = true;
-        HideShuxingMianban();
-    }
+  
 
-    void EndMove(){
-        moveFlag = false;
-        Player.velocity = Vector3.zero;
-    }
-
-    //遥感的代理
-    //传入 Horizontal Vertical，改变方向
-    void OnDrag(Vector2 hv){
-        float y = Quaternion.LookRotation(new Vector3(hv.x, 0, hv.y)).eulerAngles.y;
-        oriAngleY = CommonFuncs.GetMainCamera().transform.eulerAngles.y;
-        targetDir = new Vector3(0, oriAngleY + y, 0); //朝向
-        targetRotation = Quaternion.Euler(targetDir);
-    }
-
-    //开始拖拽
-    void BeginDrag(){
-        BeginMove();
-    }
-
-    void EndDrag(){
-        EndMove();
-    }
-
-
-    //判断是否点击在模型上，触发事件
+    //====================判断是否点击在模型上，触发事件=============
     void IsClickedModao(){
         if (Input.GetMouseButtonDown(0)){//判断是否是点击事件
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -190,9 +199,12 @@ public class Modao : MonoBehaviour {
             }
         }
 
-        GameObject ShuxingUI = (GameObject)Resources.Load("Prefab/ScenePrefab/ShuxingMianban");
+        GameObject ShuxingUI = (GameObject)Resources.Load("Prefab/CanvasPerfab/ShuxingMianban");
         ShuxingUI = Instantiate(ShuxingUI, GameObject.Find("Canvas").transform);
-        ShuxingUI.GetComponent<RectTransform>().localPosition = touchPos + new Vector3(-400, -touchPos.y, 0);
+        ShuxingUI.GetComponent<RectTransform>().localScale = new Vector2(w / 2000, h / 1100);
+
+        float dx = Mathf.Clamp(touchPos.x - w / 4, touchPos.x - w / 2, 3 * w / 8);
+        ShuxingUI.GetComponent<RectTransform>().localPosition = new Vector3(dx, 0, 0);
 
         ShuxingMianban ShuxingCS = ShuxingUI.GetComponent<ShuxingMianban>();
         ShuxingCS.atk.text = Shuxing["atkStr"];
@@ -210,12 +222,18 @@ public class Modao : MonoBehaviour {
     }
 
 
-    //碰撞
+    ///=================碰撞================
     void OnCollisionEnter(Collision collision){
-        print("魔导碰到了：" + collision.gameObject.name);
+        print("魔导碰到了：" + collision.gameObject.name + "Tag: " + collision.gameObject.tag);
         if (collision.gameObject.name == "Terrain"){
             AddPosYConstraint();
             print("落地");
+        }else if (collision.gameObject.tag == "Gubulin_01"){
+            int atk = GebulinData.GetGebulinATK();
+            Attacked(atk);
+        }else if (collision.gameObject.tag == "Gubulin_02"){
+            int atk = GebulinData.GetGebulinATK();
+            Attacked(atk+500);
         }
     }
 
@@ -223,7 +241,7 @@ public class Modao : MonoBehaviour {
         Player.GetComponent<Rigidbody>().constraints |= RigidbodyConstraints.FreezePositionY;
     }
 
-    //死亡
+    //=================死亡================
     void Dead(){
         Destroy(gameObject);
     }

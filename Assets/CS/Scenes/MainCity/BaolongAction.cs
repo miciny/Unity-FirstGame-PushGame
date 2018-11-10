@@ -82,6 +82,8 @@ public class BaolongAction : MonoBehaviour {
         }
     }
 
+
+    //=================动作================
     void Jump(){
         if (jumpFlag){
             return;
@@ -124,7 +126,7 @@ public class BaolongAction : MonoBehaviour {
         }
     }
 
-    //按键的动作
+    //=================移动================
     void BaolongMove(int d){
         BeginMove();
         oriAngleY = CommonFuncs.GetMainCamera().transform.eulerAngles.y;
@@ -180,7 +182,8 @@ public class BaolongAction : MonoBehaviour {
         EndMove();
     }
 
-    //碰撞
+
+    //=================碰撞================
     private void OnCollisionEnter(Collision collision){
         print("Player碰到了：" + collision.gameObject.name);
         //落地了，jumpFlag变成false

@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class GebulinData : MonoBehaviour {
 
-    static readonly int atk = 200;
-    static readonly int blood = 1500;
+    static readonly int atk = 1400;
+    static readonly int blood = 3000;
 
 
     public static Dictionary<string, string> GetGebulinShuxing(){
@@ -14,5 +14,9 @@ public class GebulinData : MonoBehaviour {
             { "bloodStr", blood.ToString() }
         };
         return Shuxing;
+    }
+
+    public static int GetGebulinATK(){
+        return atk;
     }
 }

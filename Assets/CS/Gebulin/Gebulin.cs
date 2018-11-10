@@ -1,22 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Gebulin : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        //发波
-        if (Input.GetKeyDown(KeyCode.Space)){
-            Attacked(200);
-        }
-
-    }
 
     void Attacked(int damage){
         foreach (Transform can in transform){
@@ -27,10 +11,28 @@ public class Gebulin : MonoBehaviour {
         }
     }
 
+    void OnCollisionEnter(Collision collision){
+        if (collision.gameObject.name == "Terrain"){
+            AddPosYConstraint();
+        }
+    }
+
+    //被粒子系统碰到
+    void OnParticleCollision(GameObject other){
+        print(other.tag + ": " + gameObject.name);
+        if (other.tag == "Modao_Light"){
+            int atk = ModaoData.GetModaoATK();
+            Attacked(atk);
+        }
+    }
+
     //死亡
     void Dead(){
         Destroy(gameObject);
     }
 
+    void AddPosYConstraint(){
+        GetComponent<Rigidbody>().constraints |= RigidbodyConstraints.FreezePositionY;
+    }
 
 }

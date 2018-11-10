@@ -25,13 +25,10 @@ public class CreateMainCityScene : MonoBehaviour{
         CreateYaogan();
         CreateTheStone();
         CreateBtn();
+        CreatePlayerInfo();
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
+    //=========================Common Funcs==========================
     void Reload(){
         if (AllParentGo)
         {
@@ -51,6 +48,8 @@ public class CreateMainCityScene : MonoBehaviour{
         mycamera.GetComponent<CameraFollow>().Start();
     }
 
+
+    //=========================Set Sence==========================
     //创建一个自己的模型=   Player
     void CreateThePlayer()
     {
@@ -79,8 +78,7 @@ public class CreateMainCityScene : MonoBehaviour{
     }
 
     //创建一个内置的模型cube=   stone
-    void CreateTheStone()
-    {
+    void CreateTheStone(){
         GameObject go = GameObject.CreatePrimitive(PrimitiveType.Cube);
         go.name = "Stone";
         go.transform.parent = AllParentGo.transform;
@@ -119,18 +117,30 @@ public class CreateMainCityScene : MonoBehaviour{
         goUpFace.AddComponent<Stone>();
     }
 
+
+    //=========================Set Canvas==========================
     void CreateYaogan(){
         GameObject Yaogan = (GameObject)Resources.Load("Prefab/CanvasPerfab/YaoganBack");
         Yaogan = Instantiate(Yaogan, GameObject.Find("Canvas").transform);
         Yaogan.GetComponent<Yaogan>().playerName = "Baolong";
+        Yaogan.GetComponent<RectTransform>().localScale = new Vector2(w / 2400, w / 2400);
+        Yaogan.GetComponent<RectTransform>().localPosition = new Vector3(-w / 3, w / 12 - 2 * h / 5, 0);
     }
 
-    void CreateBtn()
-    {
+    void CreatePlayerInfo(){
+        GameObject playerInfoUI = (GameObject)Resources.Load("Prefab/CanvasPerfab/PlayerInfo");
+        playerInfoUI = Instantiate(playerInfoUI, GameObject.Find("Canvas").transform);
+        playerInfoUI.GetComponent<RectTransform>().localScale = new Vector2(w / 1400, h / 840);
+        playerInfoUI.GetComponent<RectTransform>().position = new Vector3(w / 8, 11 * h / 12, 0);
+    }
+
+    void CreateBtn(){
         //跳
         GameObject btnJump = (GameObject)Resources.Load("Prefab/CanvasPerfab/Button");
         btnJump = Instantiate(btnJump, CommonFuncs.GetMainCanvas().transform, false);
         btnJump.GetComponent<RectTransform>().localPosition = new Vector3(500, -370, 0);
+        btnJump.GetComponent<RectTransform>().localPosition = new Vector3(5 * w / 12, -2 * h / 5, 0);
+        btnJump.GetComponent<RectTransform>().localScale = new Vector2(w / 1200, h / 1000);
         btnJump.GetComponent<UIButton>().SetTitle("跳");
         btnJump.GetComponent<UIButton>().clickAction = () =>
         {
@@ -141,6 +151,8 @@ public class CreateMainCityScene : MonoBehaviour{
         GameObject btnAcc = (GameObject)Resources.Load("Prefab/CanvasPerfab/Button");
         btnAcc = Instantiate(btnAcc, CommonFuncs.GetMainCanvas().transform, false);
         btnAcc.GetComponent<RectTransform>().localPosition = new Vector3(620, -250, 0);
+        btnAcc.GetComponent<RectTransform>().localPosition = new Vector3(5 * w / 12, -3 * h / 10, 0);
+        btnAcc.GetComponent<RectTransform>().localScale = new Vector2(w / 1200, h / 1000);
         btnAcc.GetComponent<UIButton>().SetTitle("加速");
         btnAcc.GetComponent<UIButton>().clickAction = () =>
         {
@@ -155,6 +167,8 @@ public class CreateMainCityScene : MonoBehaviour{
         GameObject btnAttack = (GameObject)Resources.Load("Prefab/CanvasPerfab/Button");
         btnAttack = Instantiate(btnAttack, CommonFuncs.GetMainCanvas().transform, false);
         btnAttack.GetComponent<RectTransform>().localPosition = new Vector3(740, -130, 0);
+        btnAttack.GetComponent<RectTransform>().localPosition = new Vector3(5 * w / 12, -1 * h / 5, 0);
+        btnAttack.GetComponent<RectTransform>().localScale = new Vector2(w / 1200, h / 1000);
         btnAttack.GetComponent<UIButton>().SetTitle("攻击");
         btnAttack.GetComponent<UIButton>().clickAction = () =>
         {
@@ -164,7 +178,7 @@ public class CreateMainCityScene : MonoBehaviour{
 
     private void OnGUI(){
         //重新开始按钮
-        if (GUI.Button(new Rect(w * 0.04f, h * 0.04f, w * 0.12f, h * 0.1f), "重新开始")){
+        if (GUI.Button(new Rect(w * 0.89f, h * 0.04f, w * 0.1f, h * 0.08f), "重新开始")){
             Reload();
         }
     }

@@ -47,11 +47,7 @@ public class CreatePushScene : MonoBehaviour{
     }
 
 
-    // Update is called once per frame
-    void Update(){
-
-    }
-
+    //=========================Set Sence==========================
     //处理数据，加载物体
     void ProgressData(){
         int index = level - 1;
@@ -85,37 +81,6 @@ public class CreatePushScene : MonoBehaviour{
                 {
                     CreateThePlayer(i, j);
                 }
-            }
-        }
-    }
-
-    //加载关卡，清掉所有子对象，重新添加子对象
-    void LoadLevel()
-    {
-        Aim.score = 0;
-        PlayerMove.count = 0;
-        GameObject.Find("Level").SendMessage("ChangeText");
-        GameObject.Find("Count").SendMessage("ChangeText");
-
-        if (AllParentGo){
-            int c = AllParentGo.transform.childCount;
-            for (int i = 0; i < c; i++){
-                Destroy(AllParentGo.transform.GetChild(i).gameObject);
-            }
-        }
-        ProgressData();
-    }
-
-    //胜利时，加载下一关，或者到下一个场景
-    void Vectory(){
-        if (aimScore == Aim.score){
-            if (level < levelNm){
-                level++;
-                MessageBox.Show("恭喜", "过了第"+ (level-1)+"关");
-                MessageBox.confim = LoadLevel;
-            }else{
-                MessageBox.Show("恭喜", "通过试炼！！！，点击确定返回");
-                MessageBox.confim = BackToMainCityScene;
             }
         }
     }
@@ -235,6 +200,7 @@ public class CreatePushScene : MonoBehaviour{
     }
 
 
+    //=========================Set Canvas==========================
     void OnGUI()
     {
        //移动按钮
@@ -265,6 +231,9 @@ public class CreatePushScene : MonoBehaviour{
         }
     }
 
+
+
+    //=========================Common Funcs==========================
     //移动人物检测
     void PlayerRayDetect(int d){
         GameObject.Find("Player").SendMessage("RayDetect", d, SendMessageOptions.DontRequireReceiver);
@@ -273,5 +242,43 @@ public class CreatePushScene : MonoBehaviour{
     //回到主场景
     void BackToMainCityScene(){
         CommonFuncs.LoadTheScene("MainCity");
+    }
+
+    //加载关卡，清掉所有子对象，重新添加子对象
+    void LoadLevel()
+    {
+        Aim.score = 0;
+        PlayerMove.count = 0;
+        GameObject.Find("Level").SendMessage("ChangeText");
+        GameObject.Find("Count").SendMessage("ChangeText");
+
+        if (AllParentGo)
+        {
+            int c = AllParentGo.transform.childCount;
+            for (int i = 0; i < c; i++)
+            {
+                Destroy(AllParentGo.transform.GetChild(i).gameObject);
+            }
+        }
+        ProgressData();
+    }
+
+    //胜利时，加载下一关，或者到下一个场景
+    void Vectory()
+    {
+        if (aimScore == Aim.score)
+        {
+            if (level < levelNm)
+            {
+                level++;
+                MessageBox.Show("恭喜", "过了第" + (level - 1) + "关");
+                MessageBox.confim = LoadLevel;
+            }
+            else
+            {
+                MessageBox.Show("恭喜", "通过试炼！！！，点击确定返回");
+                MessageBox.confim = BackToMainCityScene;
+            }
+        }
     }
 }
