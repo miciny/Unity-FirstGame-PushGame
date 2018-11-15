@@ -80,6 +80,7 @@
     <Compile Include="Assets\CS\Scenes\Canvas\Shuxing\ShuxingMianban.cs" />
     <Compile Include="Assets\CS\Scenes\Canvas\Yaogan\Yaogan.cs" />
     <Compile Include="Assets\CS\Scenes\Fight\CreateFightSences.cs" />
+    <Compile Include="Assets\CS\Scenes\Fight\Level_2\MainMove.cs" />
     <Compile Include="Assets\CS\Scenes\Loading\AsyncLoadScene.cs" />
     <Compile Include="Assets\CS\Scenes\MainCity\BaolongAction.cs" />
     <Compile Include="Assets\CS\Scenes\MainCity\CreateMainCityScene.cs" />

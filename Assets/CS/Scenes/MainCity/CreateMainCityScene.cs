@@ -20,7 +20,6 @@ public class CreateMainCityScene : MonoBehaviour{
 
         CreateThePlayer();
         CreateYaogan();
-        CreateTheStone();
         CreateBtn();
         CreatePlayerInfo();
     }
@@ -37,7 +36,6 @@ public class CreateMainCityScene : MonoBehaviour{
         }
 
         CreateThePlayer();
-        CreateTheStone();
 
         GameObject mycamera = CommonFuncs.GetMainCamera();
         mycamera.transform.position = new Vector3(0, 15, 24);
@@ -53,6 +51,7 @@ public class CreateMainCityScene : MonoBehaviour{
         GameObject go = (GameObject)Resources.Load("Prefab/Heros/Red Samurai/samuzai");
         go = Instantiate(go, AllParentGo.transform);
         go.name = "Player";
+        go.layer = 9;
 
         go.transform.position = new Vector3(0, 6f, 0);
         go.transform.localEulerAngles = new Vector3(0, 0, 0);
@@ -71,46 +70,6 @@ public class CreateMainCityScene : MonoBehaviour{
 
         GameObject.Find("Main Camera").GetComponent<CameraFollow>().target = go.transform;
         GameObject.Find("Main Camera").SendMessage("GetOffset");
-    }
-
-    //创建一个内置的模型cube=   stone
-    void CreateTheStone(){
-        GameObject go = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        go.name = "Stone";
-        go.transform.parent = AllParentGo.transform;
-
-        go.transform.position = new Vector3(0f, 3f, 0f);
-        go.transform.localScale = new Vector3(3, 2.9f, 3);
-
-        go.GetComponent<BoxCollider>().isTrigger = false;
-
-        go.AddComponent<Rigidbody>();
-        go.GetComponent<Rigidbody>().useGravity = true;
-        go.GetComponent<Rigidbody>().constraints = ~RigidbodyConstraints.FreezePositionY;
-        go.GetComponent<Rigidbody>().freezeRotation = true;
-
-        Material mat = new Material(Shader.Find("Shader Forge/StoneShader"));
-        go.GetComponent<MeshRenderer>().material = mat;
-
-        //上表面
-        GameObject goUpFace = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        goUpFace.name = "StoneUpFace";
-        goUpFace.transform.parent = go.transform;
-
-        goUpFace.transform.position = new Vector3(0f, 4f, 0f);
-        goUpFace.transform.localScale = new Vector3(1, 0.1f, 1);
-
-        goUpFace.GetComponent<BoxCollider>().isTrigger = false;
-
-        goUpFace.AddComponent<Rigidbody>();
-        goUpFace.GetComponent<Rigidbody>().useGravity = true;
-        goUpFace.GetComponent<Rigidbody>().constraints = ~RigidbodyConstraints.FreezePositionY;
-        goUpFace.GetComponent<Rigidbody>().freezeRotation = true;
-
-        goUpFace.GetComponent<MeshRenderer>().material = mat;
-
-        go.AddComponent<Stone>();
-        goUpFace.AddComponent<Stone>();
     }
 
 

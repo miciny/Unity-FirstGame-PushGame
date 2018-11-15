@@ -186,12 +186,10 @@ public class BaolongAction : MonoBehaviour {
 
 
     //=================碰撞================
-    private void OnCollisionEnter(Collision collision){
+    void OnCollisionEnter(Collision collision){
         print("Player碰到了：" + collision.gameObject.name);
         //落地了，jumpFlag变成false
-        if (collision.gameObject.name == "Terrain" || 
-            collision.gameObject.name == "StoneUpFace" || 
-            collision.gameObject.name == "pllz" || 
+        if (collision.gameObject.name == "Terrain" ||
             collision.gameObject.name == "Fountain")
         {
             jumpFlag = false;
@@ -206,20 +204,27 @@ public class BaolongAction : MonoBehaviour {
         if(collision.gameObject.name == "Gate"){
             CommonFuncs.LoadTheScene("Push");
         }
-
-        if (collision.gameObject.name == "Fountain"){
-            CommonFuncs.LoadTheScene("Fight_Level_1");
-        }
     }
 
-    private void OnCollisionExit(Collision collision){
-        if (collision.gameObject.name == "Terrain" || 
-            collision.gameObject.name == "StoneUpFace" ||
-            collision.gameObject.name == "pllz" ||
+    void OnCollisionExit(Collision collision){
+        if (collision.gameObject.name == "Terrain" ||
             collision.gameObject.name == "Fountain")
         {
             RemovePosYConstraint();
             print("离地");
+        }
+    }
+
+    void OnParticleCollision(GameObject other){
+        print("Player碰到了：" + other.gameObject.tag);
+        if (other.gameObject.tag == "MainGate")
+        {
+            CommonFuncs.LoadTheScene("Fight_Level_1");
+        }
+
+        if (other.gameObject.tag == "MainLight")
+        {
+            CommonFuncs.LoadTheScene("Fight_Level_2");
         }
     }
 

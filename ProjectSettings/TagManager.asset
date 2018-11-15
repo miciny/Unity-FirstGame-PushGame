@@ -7,6 +7,8 @@ TagManager:
   - Modao_Light
   - Gubulin_01
   - Gubulin_02
+  - MainGate
+  - MainLight
   layers:
   - Default
   - TransparentFX
